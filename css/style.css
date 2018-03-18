@@ -1,1 +1,640 @@
-#container{overflow:hidden;position:absolute;top:0;left:0;right:0;bottom:0}#background_video{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);object-fit:cover;height:100%;width:100%}#video_cover{position:absolute;width:100%;height:100%;background:url("video_cover.jpeg") no-repeat;background-size:cover;background-position:center}#video_controls{position:absolute;left:50%;transform:translate(-50%, 0)}#play img{width:100px}#pause img{width:90px}#pause{display:none}@font-face{font-family:DINPro-Medium;src:url("DINPro-Medium_13936.ttf")}#container{height:100%}#overlay{position:absolute;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.5)}#main_content{z-index:2;position:relative;display:inline-block;font-family:"DINPro-Medium", "Microsoft YaHei";color:#FFFFFF;top:50%;transform:translateY(-50%)}#main_content h1{font-family:"Helvetica Neue", Helvetica, Arial, PingFangHK-Regular,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;font-size:48px;letter-spacing:13px;text-shadow:0 0 14px rgba(0,0,0,0.24)}#main_content p{font-size:22px}#main_content .sub_head{color:rgba(255,255,255,0.5);font-size:18px}#main_content .info{color:rgba(255,255,255,0.5);font-size:12px;margin-top:10px}#links{margin-top:50px}#links a{border:1px solid #ffffff;border-radius:61px;font-size:18px;color:#FFFFFF;letter-spacing:1px;text-decoration:none;text-transform:uppercase;padding:10px 35px;display:inline-block;margin-right:15px}.header-content{position:fixed;font-family:"DINPro-Medium","Microsoft YaHei";z-index:99;top:0;background-color:rgba(0,0,0,0.3);width:100%;color:#ffffff;font-size:20px}.header-content ul{display:flex}.header-content ul li{padding:30px 40px;list-style:none;cursor:pointer}#footer{position:absolute;bottom:0;left:0;right:0;opacity:0.75;background-image:linear-gradient(-180deg, transparent 1%, #000 100%)}#footer a{color:#ffffff;text-decoration:none;margin:10px;padding:20px 40px;font-size:14px}#footer a:first-child{float:left}#footer a:last-child{float:right}@media (max-width: 768px){.header-content{font-size:14px}.header-content ul li{padding:20px 30px}}@media (max-width: 414px){.header-content ul li{padding:10px 40px;display:none}.header-content ul li:first-child{display:block}.header-content ul li:last-child{display:block}#main_content h1{font-size:34px}#main_content p{font-size:18px}#footer a{padding:0}#footer a:last-child{text-align:center;float:none;font-size:14px}#links a{padding:8px 30px}}body{background:url("../images/body-bg.png") no-repeat;background-position:bottom;background-size:100%;font-family:"Helvetica Neue", Helvetica, Arial, PingFangHK-Regular,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important}
+/*RESET*/
+/*PAGES*/
+#container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#background_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#video_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/img/video_cover.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#video_controls {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#play img {
+  width: 100px;
+}
+
+#pause img {
+  width: 90px;
+}
+
+#pause {
+  display: none;
+}
+
+/*@font-face {*/
+/*font-family: DINAlternate;*/
+/*src: url('DIN Alternate Regular.otf');*/
+/*}*/
+#container {
+  height: 100%;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#main_content {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  font-family: "DINPro-Medium", "Microsoft YaHei";
+  color: #FFFFFF;
+  /* Vertical center */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#main_content h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, PingFangHK-Regular,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 48px;
+  letter-spacing: 13px;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.24);
+}
+
+#main_content p {
+  font-size: 22px;
+}
+
+#main_content .sub_head {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+}
+
+#main_content .info {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#links {
+  margin-top: 50px;
+}
+
+#links a {
+  border: 1px solid #ffffff;
+  -moz-border-radius: 3.8125rem;
+  -ms-border-radius: 3.8125rem;
+  border-radius: 3.8125rem;
+  -o-border-radius: 3.75rem;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.625rem 2.1875rem;
+  display: inline-block;
+  margin-right: 0.9375rem;
+}
+
+.header-content {
+  position: fixed;
+  font-family: "DINPro-Medium","Microsoft YaHei";
+  z-index: 99;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+ol, ul {
+  margin-bottom: 0 !important;
+}
+
+.header-content ul {
+  display: flex;
+}
+
+.header-content ul .active {
+  -moz-border-bottom: 2px solid #04BCF6;
+  -ms-border-bottom: 2px solid #04BCF6;
+  border-bottom: 2px solid #04BCF6;
+}
+
+.header-content ul li {
+  padding: 1.375rem 2.5rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+  background-image: linear-gradient(-180deg, transparent 1%, #000000 100%);
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+  padding: 1.25rem 2.5rem;
+  font-size: 14px;
+}
+
+#footer a:first-child {
+  float: left;
+}
+
+#footer a:last-child {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    font-size: 0.875rem;
+  }
+  .header-content ul li {
+    padding: 1.25rem 1.875rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .header-content ul li {
+    padding: 0.625rem 2.5rem;
+    display: none;
+  }
+  .header-content ul li:first-child {
+    display: block;
+  }
+  .header-content ul li:last-child {
+    display: block;
+  }
+  #main_content h1 {
+    font-size: 34px;
+  }
+  #main_content p {
+    font-size: 18px;
+  }
+  #footer a {
+    padding: 0;
+  }
+  #footer a:last-child {
+    text-align: center;
+    float: none;
+    font-size: 14px;
+  }
+  #links a {
+    padding: 8px 30px;
+  }
+}
+
+.carDetail-banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  line-height: 0;
+}
+
+.banner-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.83;
+  background: #111214;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.27px;
+  text-align: center;
+}
+
+.banner-footer .container ul {
+  display: flex;
+}
+
+.banner-footer .container ul li {
+  padding: 1.5625rem 1.25rem;
+  list-style: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.banner-footer .container ul li:hover {
+  background: #0f497b;
+}
+
+.banner-footer .container ul li a {
+  border: 0.0625rem solid #ffffff;
+  border-radius: 6.25rem;
+  -o-border-radius: 6.25rem;
+  -moz-border-radius: 6.25rem;
+  -ms-border-radius: 6.25rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+  margin-left: 0.9375rem;
+}
+
+.banner-footer .container ul li:last-child {
+  text-align: right;
+  flex: 2;
+  padding: 0;
+  margin-top: 0.9375rem;
+}
+
+.banner-footer .container ul li:last-child:hover {
+  background: none;
+}
+
+.banner-Title {
+  position: absolute;
+  left: 3.75rem;
+  bottom: 6.875rem;
+}
+
+.banner-Title p:first-child {
+  font-family: "DINPro-Medium","Microsoft YaHei";
+  font-size: 2.25rem;
+  color: #FFFFFF;
+  letter-spacing: 0.34px;
+  padding-bottom: 0.625rem;
+  line-height: 1;
+}
+
+.banner-Title p:last-child {
+  font-family: PingFangSC-Light, "Microsoft YaHei";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  letter-spacing: 0.23px;
+  line-height: 1;
+}
+
+.sec-banner {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sec-banner .sec-banner-title {
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: "DINPro-Medium", "Microsoft YaHei";
+  font-size: 2.25rem;
+  letter-spacing: 0.34px;
+  z-index: 10;
+}
+
+.sec-banner .line {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #04BCF6;
+  width: 2.5rem;
+  top: 9.375rem;
+  height: 2px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 11;
+}
+
+.sec-banner .sec-banner-content {
+  position: absolute;
+  top: 13.125rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: PingFangHK-Regular;
+  width: 53%;
+  line-height: normal;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.19px;
+  z-index: 10;
+}
+
+.car-detail .row:last-child {
+  margin-bottom: 7.125rem;
+}
+
+.car-detail .mainTitle {
+  text-align: center;
+  padding-top: 4.625rem;
+  padding-bottom: 0.875rem;
+  margin-bottom: 5.625rem;
+  width: 100%;
+  font-size: 2.25rem;
+  color: #404040;
+  letter-spacing: 0.34px;
+  position: relative;
+}
+
+.car-detail .mainTitle:after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #04BCF6;
+  width: 2.5rem;
+  top: 0.625rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.car-detail .col-md-5 {
+  padding-right: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.car-detail .col-md-5 img {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.car-detail .col-md-5 img:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+
+.car-detail .col-md-5 .car-introduction {
+  padding: 3rem 1.25rem 0 1.25rem;
+  width: 80%;
+}
+
+.car-detail .col-md-5 .car-introduction .detail-title {
+  position: relative;
+  font-size: 1.25rem;
+  color: #404040;
+  letter-spacing: 0.19px;
+}
+
+.car-detail .col-md-5 .car-introduction .detail-title:after {
+  content: " ";
+  width: 2.5rem;
+  left: 0;
+  top: 2.0625rem;
+  position: absolute;
+  border: 0.0625rem solid #D0D0D0;
+}
+
+.car-detail .col-md-5 .car-introduction p {
+  margin-top: 3.3125rem;
+  font-size: 1rem;
+  color: #888888;
+  letter-spacing: 0.15px;
+  line-height: 1.5625rem;
+}
+
+.car-detail .col-md-7 {
+  line-height: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.car-detail .col-md-7 img {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.car-detail .col-md-7 img:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+
+.car-detail .col-md-7 .car-introduction {
+  padding: 3rem 1.25rem 0 4.5625rem;
+  width: 83%;
+}
+
+.car-detail .col-md-7 .car-introduction .detail-title {
+  position: relative;
+  font-size: 1.25rem;
+  color: #404040;
+  letter-spacing: 0.19px;
+}
+
+.car-detail .col-md-7 .car-introduction .detail-title:after {
+  content: " ";
+  width: 2.5rem;
+  left: 0;
+  top: 2.0625rem;
+  position: absolute;
+  border: 0.0625rem solid #D0D0D0;
+}
+
+.car-detail .col-md-7 .car-introduction p {
+  margin-top: 3.3125rem;
+  font-size: 1rem;
+  color: #888888;
+  letter-spacing: 0.15px;
+  line-height: 1.5625rem;
+}
+
+.banner {
+  height: 32.5rem;
+  margin-bottom: 3.75rem;
+}
+
+.banner .showImg {
+  line-height: 0;
+}
+
+.banner .showImg .col-md-3 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.car-detail-footer {
+  height: 22.0625rem;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.car-detail-footer p {
+  margin-bottom: 1.875rem;
+  font-size: 1rem;
+  color: #888888;
+  letter-spacing: 0.15px;
+}
+
+.car-detail-footer p:nth-child(1) {
+  padding-top: 3.75rem;
+}
+
+.car-detail-footer p:nth-child(3) {
+  margin-bottom: 5.625rem;
+}
+
+.my-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.my-gallery img {
+  width: 100%;
+  height: auto;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.my-gallery img:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+
+.my-gallery figure {
+  display: block;
+  overflow: hidden;
+}
+
+.my-gallery figcaption {
+  display: none;
+}
+
+.formBody {
+  margin: 1.875rem 2.5rem 4.375rem 2.5rem;
+}
+
+.formBody .formTitle {
+  font-size: 1.5rem;
+  color: #404040;
+  letter-spacing: 0.23px;
+  padding-bottom: 0.9375rem;
+}
+
+.formBody .titleDesc {
+  font-size: 0.875rem;
+  color: #888888;
+  letter-spacing: 0.13px;
+}
+
+.formBody .formSubTitle {
+  padding-top: 2.6875rem;
+  font-size: 1.125rem;
+  color: #404040;
+  letter-spacing: 0.17px;
+}
+
+.formBody .carbox {
+  cursor: pointer;
+  margin-top: 1.25rem;
+  background: #FFFFFF;
+  border: 3px solid #DADADA;
+  border-radius: 0.125rem;
+  text-align: center;
+}
+
+.formBody .carbox img {
+  padding: 1.9375rem 2.9375rem 0.625rem 2.9375rem;
+  width: 100%;
+}
+
+.formBody .carbox .carName {
+  font-size: 1.25rem;
+  color: #404040;
+  letter-spacing: 0.19px;
+  padding-bottom: 1.125rem;
+}
+
+.formBody .active {
+  border: 0.1875rem solid #04BCF6;
+}
+
+.formBody .tips {
+  margin-top: 0.9375rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #888888;
+  letter-spacing: 0.11px;
+}
+
+.formBody .btns {
+  margin-top: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.formBody .btns button:nth-child(1) {
+  padding-left: 3.4375rem;
+  padding-right: 3.4375rem;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+  color: #888888;
+  margin-right: 0.6875rem;
+}
+
+.formBody .form-input-height input {
+  height: 2.8125rem;
+}
+
+.formBody .col-md-6 {
+  margin-top: 1.25rem;
+}
+
+.formBody .col-md-6 select {
+  color: #888888;
+}
+
+@font-face {
+  font-family: DINPro-Medium;
+  src: url("../../assets/fonts/DINPro-Medium_13936.ttf");
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, PingFangHK-Regular,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}

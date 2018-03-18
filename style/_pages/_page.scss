@@ -1,12 +1,16 @@
 @import 'index.scss';
-
+@import 'carDetail.scss';
+@font-face {
+  font-family: DINPro-Medium;
+  src: url('../../assets/fonts/DINPro-Medium_13936.ttf');
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
 body {
-  background: url("../images/body-bg.png") no-repeat;
-  background-position: bottom;
-  background-size: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, PingFangHK-Regular,"PingFang SC",
-  "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei",
-  "WenQuanYi Micro Hei", sans-serif !important;
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, PingFangHK-Regular,"PingFang SC",
+  "Hiragino Sans GB", "Heiti SC",
+  "WenQuanYi Micro Hei", sans-serif;
 }
 
 
