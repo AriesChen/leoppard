@@ -66,8 +66,8 @@
 #main_content {
   z-index: 2;
   position: relative;
-  display: inline-block;
   font-family: "DINPro-Medium", "Microsoft YaHei";
+  text-align: center;
   color: #FFFFFF;
   /* Vertical center */
   top: 50%;
