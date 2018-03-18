@@ -22,10 +22,18 @@
       list-style: none;
       line-height: 1;
       cursor: pointer;
+      a {
+        color: #ffffff;
+      }
       &:hover {
         background: #0f497b;
+        color: #ffffff;
       }
-      a {
+      a:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      ._btn {
         border: rem(1) solid #ffffff;
         border-radius:rem(100);
         -o-border-radius: rem(100);
@@ -33,11 +41,14 @@
         -ms-border-radius: rem(100);
         color: #FFFFFF;
         letter-spacing: 1px;
-        text-decoration: none;
         text-transform: uppercase;
         padding: rem(10) rem(20);
         display: inline-block;
         margin-left: rem(15);
+      }
+      ._btn:nth-child(2) {
+        color: #04BCF6;
+        border-color: #04BCF6;;
       }
     }
     li:last-child {

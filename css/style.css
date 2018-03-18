@@ -138,7 +138,7 @@ ol, ul {
 .header-content ul .active {
   -moz-border-bottom: 2px solid #04BCF6;
   -ms-border-bottom: 2px solid #04BCF6;
-  border-bottom: 2px solid #04BCF6;
+  border-bottom: 3px solid #04BCF6;
 }
 
 .header-content ul li {
@@ -242,11 +242,21 @@ ol, ul {
   cursor: pointer;
 }
 
-.banner-footer .container ul li:hover {
-  background: #0f497b;
+.banner-footer .container ul li a {
+  color: #ffffff;
 }
 
-.banner-footer .container ul li a {
+.banner-footer .container ul li:hover {
+  background: #0f497b;
+  color: #ffffff;
+}
+
+.banner-footer .container ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banner-footer .container ul li ._btn {
   border: 0.0625rem solid #ffffff;
   border-radius: 6.25rem;
   -o-border-radius: 6.25rem;
@@ -254,11 +264,15 @@ ol, ul {
   -ms-border-radius: 6.25rem;
   color: #FFFFFF;
   letter-spacing: 1px;
-  text-decoration: none;
   text-transform: uppercase;
   padding: 0.625rem 1.25rem;
   display: inline-block;
   margin-left: 0.9375rem;
+}
+
+.banner-footer .container ul li ._btn:nth-child(2) {
+  color: #04BCF6;
+  border-color: #04BCF6;
 }
 
 .banner-footer .container ul li:last-child {
