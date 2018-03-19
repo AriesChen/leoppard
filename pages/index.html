@@ -19,43 +19,97 @@
   <![endif]-->
 </head>
 <body>
-  <div id="container">
-    <video id="background_video" loop muted></video>
-    <div id="video_cover"></div>
-    <div id="overlay"></div>
-    <header class="header-content">
+  <div class="pc_styles">
+    <div id="container">
+      <video id="background_video" loop muted></video>
+      <div id="video_cover"></div>
+      <div id="overlay"></div>
+      <header class="header-content">
+        <ul>
+          <li><img src="../assets/img/logo.png" width="170" alt=""></li>
+          <li>CS9</li>
+          <li>CS10</li>
+          <li>CT7</li>
+          <li>预约试驾</li>
+          <li style="text-align: right;flex: 3">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </li>
+        </ul>
+      </header>
+      <!-- banner content-->
+      <section id="main_content">
+        <div>
+          <h1>心有多野，未来就有多远</h1>
+          <br>
+          <p>全新一代CS10耀世开启</p>
+        </div>
+
+        <div id="links">
+          <a href="#">查看详情</a>
+          <a href="#">预约试驾</a>
+        </div>
+      </section>
+    </div>
+    <div id="footer">
+      <a href="">@ 2018 Leopaard All Rights Reserved    湘ICP备13007785号</a>
+      <a href="" target="_blank">
+        招聘贤才  -  关于我们  -  联系我们
+      </a>
+    </div>
+  </div>
+
+  <!-- for mobile or paid-->
+  <div class="mobile-styles">
+    <header class="header-content" style="background: #24252C">
       <ul>
-        <li><img src="../assets/img/logo.png" width="170" alt=""></li>
-        <li>CS9</li>
-        <li>CS10</li>
-        <li>CT7</li>
-        <li>预约试驾</li>
+        <li><img src="../assets/img/logo.png" width="148" alt=""></li>
         <li style="text-align: right;flex: 3">
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          <div>
+            <span class="icon-line line_top"></span>
+            <span class="icon-line line_md"></span>
+            <span class="icon-line line_bottom"></span>
+          </div>
         </li>
       </ul>
     </header>
-    <!-- banner content-->
-    <section id="main_content">
-      <div>
-        <h1>心有多野，未来就有多远</h1>
-        <br>
-        <p>全新一代CS10耀世开启</p>
+    <div class="carsBanner">
+      <p class="carType">CS10</p>
+      <p class="typeDes">随心所“驭”，自由驰骋</p>
+      <div class="carImages">
+        <img src="../assets/img/index-cs10.png">
+        <div class="bannerBtn">
+          <a class="_btn">查看详情</a>
+          <a class="_btn">预约试驾</a>
+        </div>
       </div>
-
-      <div id="links">
-        <a href="#">查看详情</a>
-        <a href="#">预约试驾</a>
+    </div>
+    <div class="carsBanner">
+      <p class="carType">CS9</p>
+      <p class="typeDes">卓越公路性能与越野性能的结合</p>
+      <div class="carImages">
+        <img src="../assets/img/index-cs9.png">
+        <div class="bannerBtn">
+          <a class="_btn">查看详情</a>
+          <a class="_btn">预约试驾</a>
+        </div>
       </div>
-    </section>
-  </div>
-
-  <div id="footer">
-    <a href="">@ 2018 Leopaard All Rights Reserved    湘ICP备13007785号</a>
-
-    <a href="" target="_blank">
-      招聘贤才  -  关于我们  -  联系我们
-    </a>
+    </div>
+    <div class="carsBanner">
+      <p class="carType">CT7</p>
+      <p class="typeDes">纵享动感操控与舒适驾乘</p>
+      <div class="carImages">
+        <img src="../assets/img/index-crt9.png">
+        <div class="bannerBtn">
+          <a class="_btn">查看详情</a>
+          <a class="_btn">预约试驾</a>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-footer">
+      <img src="../assets/img/btnLogo.png" width="224">
+      <div class="rights">@ 2018 Leopaard All Rights Reserved
+        湘ICP备13007785号</div>
+    </div>
   </div>
 
   <script src="../JS/bideo.js"></script>
