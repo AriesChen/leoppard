@@ -259,9 +259,7 @@ ol, ul {
       letter-spacing: 0.13px;
     }
   }
-  .carsBanner:nth-child(1) {
-    padding-top: rem(54);
-  }
+
   .header-content ul li{
     padding: rem(16) rem(25);
   }
@@ -270,5 +268,8 @@ ol, ul {
   }
   .mobile-styles {
     display: block;
+    .carsBanner:first-child {
+      padding-top: rem(54);
+    }
   }
 }
