@@ -23,13 +23,25 @@
   <![endif]-->
 </head>
 <body>
-  <header class="header-content" style="background: #24252C;">
+  <header class="header-content pc-header">
+    <div class="logo">
+      <img src="../assets/img/logo.png" width="170" alt="">
+    </div>
     <ul>
-      <li><img src="../assets/img/logo.png" width="170" alt=""></li>
-      <li>CS9</li>
-      <li class="active">CS10</li>
-      <li>CT7</li>
-      <li>预约试驾</li>
+      <li><a href="">CS9</a></li>
+      <li class="active"><a href="carDetail.html">CS10</a></li>
+      <li><a href="index.html">CT7</a></li>
+      <li><a href="index.html">预约试驾</a></li>
+    </ul>
+    <div class="menuIcon">
+      <span class="icon-line line_top"></span>
+      <span class="icon-line line_md"></span>
+      <span class="icon-line line_bottom"></span>
+    </div>
+  </header>
+  <header class="header-content mobile-header">
+    <ul>
+      <li>CS10</li>
       <li style="text-align: right;flex: 3">
         <div>
           <span class="icon-line line_top"></span>
@@ -61,140 +73,278 @@
       </div>
     </div>
   </div>
-
-  <div class="sec-banner" n>
-    <img src="../assets/img/carlight.png" width="100%">
-    <div class="sec-banner-title">全新 CS10</div>
-    <div class="line"></div>
-    <div class="sec-banner-content">
-      进取而精炼，新猎豹CS10展现出设计的大胆和魄力。令人惊叹的强劲动力和一流技术，
-      让您在每一次转向中感受速度与激情，尽释潜能。
-    </div>
+  <div class="mobile-banner-footer">
+    <a data-toggle="modal" data-target="#orderDriver" class="_btn">在线订车</a>
+    <a data-toggle="modal" data-target="#orderDriver" class="_btn">预约试驾</a>
   </div>
-
-  <div class="container car-detail" id="outlook">
-    <div class="mainTitle">外观设计 Explorer</div>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">矩阵式自动LED大灯</h4>
-          <p>当汽车行驶进入隧道、或者天气突然下雨中光线变暗，
-            夜幕降临时，光线感应系统感应到光线变暗后几秒内发出信号让前大灯会自动亮起，有效保护车内人员以及周边行人安全。</p>
-        </div>
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <img src="../assets/img/img1.png" alt="" width="100%">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <img src="../assets/img/img2.png" alt="" width="100%">
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">带转向灯电动折叠后视镜</h4>
-          <p>具有折叠功能的后视镜，在通过狭窄路段时可以收缩起来，提高车辆通过性，在驾驶员离开车子时，也可将后视镜折叠，不仅可以保护镜面，
-            还可以缩小停车泊位空间，有效的避免了刮蹭。同时行驶中后视镜带转向灯能有效提示周边车辆与车身保持安全距离。</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">无钥匙进入</h4>
-          <p>采用了世界最先进的无线射频技术和最先进的车辆身份编码识别系统，当车主走进车辆时，车辆自动识别车主身份，
-            车门锁会自动打开并解除防盗，为车主最大限度的提供便利和安全进入车内方式。</p>
-        </div>
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <img src="../assets/img/img3.png" alt="" width="100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="sec-banner" id="Powerful">
-    <img src="../assets/img/motivation.png" width="100%">
-    <div class="sec-banner-title">强劲动力 Powerful</div>
-    <div class="line"></div>
-    <div class="sec-banner-content">
-      搭配三菱CF4G15T的1.5T涡轮增压发动机，最大功率为150马力/5500rpm，
-      峰值扭矩为210牛·米/2000-4500rpm。8.8秒迅猛破百。搭配7速DCG智能双离合变速箱，
-      动力输出更为直接，让不甘寂静的心，得到前所未有的释放。
-    </div>
-  </div>
-
-  <div class="container car-detail" id="Interior">
-    <div class="mainTitle">内饰设计 Interior</div>
-    <div class="row">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <img src="../assets/img/img5.png" alt="" width="100%">
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">6安全气囊，安全有保障</h4>
-          <p>
-            电子安全气囊（electronic control ofsafety airbag）安全气囊系统是一种被动安全性保护系统，
-            它与座椅安全带配合，可以为乘员提供前、后、侧面有效的防撞保护。在汽车发生意外时，
-            汽车安全气囊可使头部受伤率减少25%，面部受伤率减少80%。
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 20px">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">安卓平台 MP5+多媒体大屏带导航</h4>
-          <p>
-            安卓平台MP5具有良好的应用扩展性，能够为车主提供更加便捷、多元、个性化互联网服务，同时多媒体大屏带导航功能，
-            极大提升了车内成员的视听感受，让旅程不在枯燥，提升驾乘乐趣。
-          </p>
-        </div>
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <img src="../assets/img/img6.png" alt="" width="100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="container car-detail" id="Driving">
-    <div class="mainTitle">舒适操控 Driving</div>
-    <div class="row">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">一键启动（One-Button Start）</h4>
-          <p>
-            打开车门，驾驶者进入车内，无需再寻找放入口袋或手提包中的钥匙，手指轻触按钮，车辆瞬间启动，
-            为驾驶者带来贴心的便利，富有驾乘乐趣。同时一键启动系统与车钥匙密码匹配，拥有智能防盗，人离车锁，保护财物安全。
-          </p>
-        </div>
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <img src="../assets/img/img7.png" alt="" width="100%">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
-        <img src="../assets/img/img8.png" alt="" width="100%">
-      </div>
-      <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
-        <div class="car-introduction">
-          <h4 class="detail-title">六速双离合自动变速器</h4>
-          <p>
-            横置前驱湿式双离合器六挡自动变速器，其结构以手动变速器主体结构为基础、
-            配以电子控制单元（TCU）和换档执行单元（换档执行阀总成）的新一代变速器。
-            性能稳定，动力输出平顺，改善尾气排放，解放左脚，乐趣驾控。
-          </p>
+      <div class="col-md-12">
+        <div class="sec-banner">
+          <img src="../assets/img/carlight.png" width="100%">
+          <div class="sec-banner-title">全新 CS10</div>
+          <div class="line"></div>
+          <div class="sec-banner-content">
+            <p>
+              进取而精炼，新猎豹CS10展现出设计的大胆和魄力。令人惊叹的强劲动力和一流技术，
+              让您在每一次转向中感受速度与激情，尽释潜能。
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container car-detail" id="images">
-    <div class="mainTitle">精彩图集 Images</div>
+  <!--pc端-->
+  <div class="ps-DesStyle">
+    <div class="container car-detail" id="outlook">
+      <div class="mainTitle">外观设计 Explorer</div>
+      <div class="row">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">矩阵式自动LED大灯</h4>
+            <p>当汽车行驶进入隧道、或者天气突然下雨中光线变暗，
+              夜幕降临时，光线感应系统感应到光线变暗后几秒内发出信号让前大灯会自动亮起，有效保护车内人员以及周边行人安全。</p>
+          </div>
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <img src="../assets/img/img1.png" alt="" width="100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <img src="../assets/img/img2.png" alt="" width="100%">
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">带转向灯电动折叠后视镜</h4>
+            <p>具有折叠功能的后视镜，在通过狭窄路段时可以收缩起来，提高车辆通过性，在驾驶员离开车子时，也可将后视镜折叠，不仅可以保护镜面，
+              还可以缩小停车泊位空间，有效的避免了刮蹭。同时行驶中后视镜带转向灯能有效提示周边车辆与车身保持安全距离。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">无钥匙进入</h4>
+            <p>采用了世界最先进的无线射频技术和最先进的车辆身份编码识别系统，当车主走进车辆时，车辆自动识别车主身份，
+              车门锁会自动打开并解除防盗，为车主最大限度的提供便利和安全进入车内方式。</p>
+          </div>
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <img src="../assets/img/img3.png" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="sec-banner" id="Powerful">
+      <img src="../assets/img/motivation.png" width="100%">
+      <div class="sec-banner-title">强劲动力 Powerful</div>
+      <div class="line"></div>
+      <div class="sec-banner-content">
+        搭配三菱CF4G15T的1.5T涡轮增压发动机，最大功率为150马力/5500rpm，
+        峰值扭矩为210牛·米/2000-4500rpm。8.8秒迅猛破百。搭配7速DCG智能双离合变速箱，
+        动力输出更为直接，让不甘寂静的心，得到前所未有的释放。
+      </div>
+    </div>
+    <div class="container car-detail" id="Interior">
+      <div class="mainTitle">内饰设计 Interior</div>
+      <div class="row">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <img src="../assets/img/img5.png" alt="" width="100%">
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">6安全气囊，安全有保障</h4>
+            <p>
+              电子安全气囊（electronic control ofsafety airbag）安全气囊系统是一种被动安全性保护系统，
+              它与座椅安全带配合，可以为乘员提供前、后、侧面有效的防撞保护。在汽车发生意外时，
+              汽车安全气囊可使头部受伤率减少25%，面部受伤率减少80%。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 20px">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">安卓平台 MP5+多媒体大屏带导航</h4>
+            <p>
+              安卓平台MP5具有良好的应用扩展性，能够为车主提供更加便捷、多元、个性化互联网服务，同时多媒体大屏带导航功能，
+              极大提升了车内成员的视听感受，让旅程不在枯燥，提升驾乘乐趣。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <img src="../assets/img/img6.png" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="container car-detail" id="Driving">
+      <div class="mainTitle">舒适操控 Driving</div>
+      <div class="row">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">一键启动（One-Button Start）</h4>
+            <p>
+              打开车门，驾驶者进入车内，无需再寻找放入口袋或手提包中的钥匙，手指轻触按钮，车辆瞬间启动，
+              为驾驶者带来贴心的便利，富有驾乘乐趣。同时一键启动系统与车钥匙密码匹配，拥有智能防盗，人离车锁，保护财物安全。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <img src="../assets/img/img7.png" alt="" width="100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+          <img src="../assets/img/img8.png" alt="" width="100%">
+        </div>
+        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+          <div class="car-introduction">
+            <h4 class="detail-title">六速双离合自动变速器</h4>
+            <p>
+              横置前驱湿式双离合器六挡自动变速器，其结构以手动变速器主体结构为基础、
+              配以电子控制单元（TCU）和换档执行单元（换档执行阀总成）的新一代变速器。
+              性能稳定，动力输出平顺，改善尾气排放，解放左脚，乐趣驾控。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="banner my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+  <!--pc端-->
+
+  <!--移动端-->
+  <div class="mobile-DesStyle">
+    <div class="container-fluid car-detail">
+      <div class="mainTitle">外观设计 Explorer</div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/img1.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">矩阵式自动LED大灯</h4>
+            <p>当汽车行驶进入隧道、或者天气突然下雨中光线变暗，
+              夜幕降临时，光线感应系统感应到光线变暗后几秒内发出信号让前大灯会自动亮起，有效保护车内人员以及周边行人安全。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/img2.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">带转向灯电动折叠后视镜</h4>
+            <p>具有折叠功能的后视镜，在通过狭窄路段时可以收缩起来，提高车辆通过性，在驾驶员离开车子时，也可将后视镜折叠，不仅可以保护镜面，
+              还可以缩小停车泊位空间，有效的避免了刮蹭。同时行驶中后视镜带转向灯能有效提示周边车辆与车身保持安全距离。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/img3.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">无钥匙进入</h4>
+            <p>采用了世界最先进的无线射频技术和最先进的车辆身份编码识别系统，当车主走进车辆时，车辆自动识别车主身份，
+              车门锁会自动打开并解除防盗，为车主最大限度的提供便利和安全进入车内方式。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid sec-banner">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/motivation.png" width="100%">
+          <div class="sec-banner-title">强劲动力 Powerful</div>
+          <div class="line"></div>
+          <div class="sec-banner-content">
+            搭配三菱CF4G15T的1.5T涡轮增压发动机，最大功率为150马力/5500rpm，
+            峰值扭矩为210牛·米/2000-4500rpm。8.8秒迅猛破百。搭配7速DCG智能双离合变速箱，
+            动力输出更为直接，让不甘寂静的心，得到前所未有的释放。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid car-detail">
+      <div class="mainTitle">内饰设计 Interior</div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/img5.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">6安全气囊，安全有保障</h4>
+            <p>
+              电子安全气囊（electronic control ofsafety airbag）安全气囊系统是一种被动安全性保护系统，
+              它与座椅安全带配合，可以为乘员提供前、后、侧面有效的防撞保护。在汽车发生意外时，
+              汽车安全气囊可使头部受伤率减少25%，面部受伤率减少80%。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 20px">
+        <div class="col-sm-12">
+          <img src="../assets/img/img6.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">安卓平台 MP5+多媒体大屏带导航</h4>
+            <p>
+              安卓平台MP5具有良好的应用扩展性，能够为车主提供更加便捷、多元、个性化互联网服务，同时多媒体大屏带导航功能，
+              极大提升了车内成员的视听感受，让旅程不在枯燥，提升驾乘乐趣。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid car-detail">
+      <div class="mainTitle">舒适操控 Driving</div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/img7.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">一键启动（One-Button Start）</h4>
+            <p>
+              打开车门，驾驶者进入车内，无需再寻找放入口袋或手提包中的钥匙，手指轻触按钮，车辆瞬间启动，
+              为驾驶者带来贴心的便利，富有驾乘乐趣。同时一键启动系统与车钥匙密码匹配，拥有智能防盗，人离车锁，保护财物安全。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="../assets/img/img8.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-12">
+          <div class="car-introduction">
+            <h4 class="detail-title">六速双离合自动变速器</h4>
+            <p>
+              横置前驱湿式双离合器六挡自动变速器，其结构以手动变速器主体结构为基础、
+              配以电子控制单元（TCU）和换档执行单元（换档执行阀总成）的新一代变速器。
+              性能稳定，动力输出平顺，改善尾气排放，解放左脚，乐趣驾控。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--移动端-->
+
+  <div class="container-fluid car-detail" id="images">
+    <div class="row">
+      <div class="col-md-12 mainTitle">
+        精彩图集 Images
+      </div>
+    </div>
+  </div>
+  <div class=" container-fluid banner my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
     <div class="row showImg">
-        <div class="col-md-3">
+        <div class="col-md-3 col-3 col-sm-3">
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="contentUrl" data-size="1204x696">
               <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="thumbnail" alt="Image description" />
@@ -211,7 +361,7 @@
             </a>
           </figure>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-3 col-sm-3">
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="contentUrl" data-size="1204x696">
               <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="thumbnail" alt="Image description" />
@@ -228,7 +378,7 @@
             </a>
           </figure>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-3 col-sm-3">
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
               <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
@@ -245,7 +395,7 @@
             </a>
           </figure>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-3 col-sm-3">
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="contentUrl" data-size="1204x696">
               <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="thumbnail" alt="Image description" />
@@ -265,11 +415,16 @@
   </div>
   </div>
 
-
-  <div class="car-detail-footer">
-      <p><img src="../assets/img/btnLogo.png" width="276px"></p>
-      <p>@ 2018 Leopaard All Rights Reserved    湘ICP备13007785号</p>
-      <p><a href="#">招聘贤才</a>  -  <a href="#">关于我们</a>  -  <a href="#">联系我们</a></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="car-detail-footer">
+          <p><img src="../assets/img/btnLogo.png" width="276px"></p>
+          <p>@ 2018 Leopaard All Rights Reserved    湘ICP备13007785号</p>
+          <p><a href="#">招聘贤才</a>  -  <a href="#">关于我们</a>  -  <a href="#">联系我们</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- modals-->

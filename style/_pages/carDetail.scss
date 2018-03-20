@@ -7,8 +7,9 @@
 }
 .banner-footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  z-index: 9;
   opacity: 0.83;
   background: #111214;
   font-size: rem(14);
@@ -82,6 +83,14 @@
     line-height: 1;
   }
 }
+.pc-header {
+  display: block;
+  background: #24252C;
+}
+.mobile-header {
+  display: none;
+  background: #24252C;
+}
 .sec-banner {
   position: relative;
   text-align: center;
@@ -111,6 +120,9 @@
     z-index: 11;
   }
   .sec-banner-content {
+    p {
+      line-height: 1.5;
+    }
     position: absolute;
     top: rem(210);
     right: 0;
@@ -370,5 +382,187 @@
     select {
       color: #888888;
     }
+  }
+}
+.ps-DesStyle {
+  display: block;
+}
+.mobile-DesStyle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .banner {
+    .showImg {
+      .col-md-3 {
+        padding-right: rem(15);
+        padding-left: rem(15);
+      }
+    }
+  }
+  .col-sm-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .col-md-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .pc-header {
+    display: none;
+  }
+  .banner-footer {
+    display: none;
+  }
+  .ps-DesStyle {
+    display: none;
+  }
+  .mobile-DesStyle {
+    display: block;
+    .container {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+  .car-detail {
+    .row:last-child {
+      margin-bottom: 0;
+    }
+    .mainTitle {
+      padding-top: rem(40);
+      padding-bottom: rem(24);
+      margin-bottom: rem(43);
+      font-size: rem(24);
+    }
+    .col-sm-12 {
+      line-height: 0;
+      text-align: center;
+      .car-introduction {
+        padding: rem(30) rem(20);
+        .detail-title {
+          position: relative;
+          font-size: rem(20);
+          color: #404040;
+          letter-spacing: 0.19px;
+          &:after {
+            content: " ";
+            width: rem(40);
+            top: rem(35);
+            position: absolute;
+            border: rem(1) solid #D0D0D0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin:auto;
+          }
+        }
+        p {
+          margin-top: rem(43);
+          font-size: rem(16);
+          color: #5C5C5C;
+          letter-spacing: 0.15px;
+          line-height: rem(25);
+        }
+      }
+    }
+  }
+  .mobile-banner-footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 66;
+    opacity: 0.83;
+    background: #111214;
+    font-size: rem(14);
+    padding: rem(10) 0;
+    color: rgba(255,255,255,0.80);
+    letter-spacing: 0.27px;
+    text-align: center;
+    a {
+      padding: rem(25) rem(20);
+      list-style: none;
+      line-height: 1;
+      cursor: pointer;
+      color: #ffffff;
+    }
+    ._btn {
+      border: rem(1) solid #ffffff;
+      border-radius:rem(100);
+      -o-border-radius: rem(100);
+      -moz-border-radius: rem(100);
+      -ms-border-radius: rem(100);
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: rem(10) rem(20);
+      display: inline-block;
+      margin-left: rem(15);
+    }
+    ._btn:nth-child(2) {
+      color: #04BCF6;
+      border-color: #04BCF6;;
+    }
+  }
+
+  .sec-banner {
+    position: relative;
+    text-align: center;
+    img {
+      height: rem(343);
+    }
+    color: #ffffff;
+    .sec-banner-title {
+      top: rem(36);
+      font-size: rem(24);
+    }
+    .line {
+      width: rem(40);
+      top: rem(83);
+      height: rem(4);
+    }
+    .sec-banner-content {
+      p {
+        line-height: 1.5;
+      }
+      top: rem(110);
+      width: 80%;
+      font-size: rem(16);
+    }
+  }
+
+  .mobile-header {
+    display: block;
+  }
+  .carDetail-banner {
+    position: relative;
+    text-align: center;
+    padding-top: rem(52);
+    height: rem(278);
+  }
+  .car-detail-footer {
+    height: rem(200);
+    text-align: center;
+    p {
+      margin-bottom: rem(20);
+      font-size: rem(14);
+    }
+    p:nth-child(1) {
+      padding-top: 0;
+    }
+    p:nth-child(2) {
+      padding: 0 rem(40);
+    }
+    p:nth-child(3) {
+      display: none;
+    }
+    img {
+      width: rem(220);
+    }
+  }
+  .banner-Title {
+    display: none;
+  }
+  .banner-footer {
+    display: none;
   }
 }

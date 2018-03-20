@@ -1,0 +1,45 @@
+.newsBanner {
+  background: #E3E3E3;
+  padding: rem(30) 0;
+  width: 100%;
+  height: auto;
+  margin-top: rem(60);
+  .subTitle {
+    //font-family: PingFangSC-Regular;
+    padding-top: rem(10);
+    font-size: rem(16);
+    color: #5C5C5C;
+    letter-spacing: 0.15px;
+  }
+  input {
+    margin-top: rem(8);
+    position: relative;
+  }
+  span {
+    position: absolute;
+    z-index: 10;
+    right:rem(30);
+    color: #888888;
+    top: rem(20);
+    cursor: pointer;
+  }
+}
+.newsTitle {
+  //font-family: PingFangSC-Semibold;
+  font-size: rem(26);
+  color: #404040;
+  letter-spacing: 0.23px;
+}
+.newsContent {
+  margin-top: rem(45);
+  .times {
+    padding-bottom: rem(14);
+    font-family: PingFangSC-Regular;
+    font-size: rem(12);
+    color: #888888;
+    letter-spacing: 0.11px;
+  }
+  img {
+    padding: rem(30) 0 rem(36);
+  }
+}

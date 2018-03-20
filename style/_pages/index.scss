@@ -113,6 +113,19 @@
   width: 100%;
   color: #ffffff;
   font-size: rem(20);
+  .logo {
+    float: left;
+    padding-left: rem(52);
+    padding-right: rem(30);
+    line-height: rem(60);
+  }
+  .menuIcon {
+    width: rem(50);
+    position: absolute;
+    top: rem(20);
+    right: rem(20);
+    height: rem(31);
+  }
   .icon-line {
     position: absolute;
     right: rem(20);
@@ -145,18 +158,27 @@ ol, ul {
   }
 }
 .header-content ul li{
-  padding: rem(22) rem(40);
   list-style: none;
   cursor: pointer;
-}
-.header-content ul >li:nth-child(2),>li:nth-child(3),>li:nth-child(4),>li:nth-child(5) {
+  color: #ffffff;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s, -moz-transform 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s, -o-transform 0.5s; /* Opera */
   &:hover {
-    //-moz-transition: all 0.5s;
-    //-ms-transition: all 0.5s;
-    //transition: all 0.5s;
-    -moz-border-bottom: 2px solid #04BCF6;
-    -ms-border-bottom: 2px solid #04BCF6;
-    border-bottom: 3px solid #04BCF6;
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg); /* Firefox 4 */
+    -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    -o-transform: rotate(360deg); /* Opera */
+    -moz-border-bottom: none;
+    -ms-border-bottom: none;
+    border-bottom: none;
+  }
+  a {
+    padding: rem(20) rem(30);
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
   }
 }
 #footer {
@@ -259,7 +281,9 @@ ol, ul {
       letter-spacing: 0.13px;
     }
   }
-
+  .paddingT-54 {
+    padding-top: rem(54);
+  }
   .header-content ul li{
     padding: rem(16) rem(25);
   }
@@ -268,8 +292,5 @@ ol, ul {
   }
   .mobile-styles {
     display: block;
-    .carsBanner:first-child {
-      padding-top: rem(54);
-    }
   }
 }

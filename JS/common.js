@@ -2,11 +2,11 @@
 /**
  * Created by Aries on 2018/3/17.
  */
-var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
-var htmlDom = document.getElementsByTagName('html')[0];
-if (htmlWidth < 768) {
-  htmlDom.style.fontSize = htmlWidth / 10 + 'px';
-}
+// var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+// var htmlDom = document.getElementsByTagName('html')[0];
+// if (htmlWidth < 768) {
+//   htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+// }
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
