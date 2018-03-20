@@ -390,6 +390,13 @@
 .mobile-DesStyle {
   display: none;
 }
+.mobile-banner-footer {
+  display: none;
+}
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 @media (max-width: 768px) {
   .banner {
     .showImg {
@@ -398,6 +405,10 @@
         padding-left: rem(15);
       }
     }
+  }
+  .container-fluid {
+    padding-left: rem(15) !important;
+    padding-right: rem(15) !important;
   }
   .col-sm-12 {
     padding-left: 0 !important;
