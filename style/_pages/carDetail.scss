@@ -320,6 +320,9 @@
     letter-spacing: 0.23px;
     padding-bottom: rem(15);
   }
+  hr {
+    margin-top: rem(60);
+  }
   .titleDesc {
     font-size: rem(14);
     color: #888888;
@@ -575,5 +578,21 @@
   }
   .banner-footer {
     display: none;
+  }
+  .formBody {
+    .btns {
+      margin-top: rem(40);
+      text-align: center;
+      margin-bottom: rem(10);
+      button {
+        padding-left: rem(25);
+        padding-right: rem(25);
+      }
+      button:nth-child(1) {
+        margin-right: rem(5);
+        padding-left: rem(40);
+        padding-right: rem(40);
+      }
+    }
   }
 }

@@ -43,3 +43,97 @@
     padding: rem(30) 0 rem(36);
   }
 }
+.newsDetail {
+  font-family: PingFangSC-Regular;
+  line-height: 2;
+  font-size: rem(14);
+  color: #5C5C5C;
+  letter-spacing: 0.13px;
+}
+.newsList {
+  padding: rem(20);
+  border: 1px solid #D4DCE6;
+  margin-bottom: rem(20);
+  .listTitle {
+    //font-family: PingFangHK-Medium;
+    position: relative;
+    font-size: rem(20);
+    padding-bottom: rem(10);
+    color: #404040;
+    &:before {
+      content: " ";
+      position: absolute;
+      width: rem(3);
+      height: rem(20);
+      margin-top: rem(12);
+      margin-left: rem(-20);
+      background: #04BCF6;;
+    }
+  }
+  p {
+    line-height: 2;
+    a {
+      //font-family: PingFangSC-Regular;
+      font-size: rem(14);
+      color: #5C5C5C;
+      &:hover {
+        text-decoration: none;
+        color: #04BCF6;
+      }
+    }
+  }
+}
+.hotNews {
+  background: #24252C;
+  padding: rem(32) 0;
+
+  .hotNewsTitle {
+    //font-family: PingFangSC-Semibold;
+    font-size: rem(24);
+    padding-bottom: rem(36);
+    color: #FFFFFF;
+    letter-spacing: 0.23px;
+  }
+  .newsTime {
+    //font-family: PingFangSC-Regular;
+    font-size: rem(12);
+    color: #FFFFFF;
+    letter-spacing: 0.11px;
+    padding: rem(18) 0 rem(10) 0;
+  }
+  .hotTitle {
+    //font-family: PingFangSC-Medium;
+    a {
+      text-decoration: none;
+      line-height: 1.5;
+      font-size: rem(20);
+      color: #FFFFFF;
+      letter-spacing: 0.19px;
+      padding-bottom: rem(10);
+      display: block;
+      &:hover {
+        color: #04BCF6;
+        text-decoration: none;
+      }
+    }
+  }
+  .hotDes {
+    //font-family: PingFangSC-Regular;
+    font-size: rem(14);
+    color: #FFFFFF;
+    letter-spacing: 0.13px;
+    line-height: 1.5;
+    margin-bottom: rem(20);
+  }
+}
+@media (max-width: 768px) {
+  .newsBanner {
+    margin-top: rem(50);
+  }
+  .hotNews {
+    margin-bottom: rem(40);
+  }
+  .car-detail-footer {
+    height: rem(180);
+  }
+}

@@ -1,0 +1,77 @@
+.Catalog {
+  margin-bottom: rem(20);
+  .title {
+    position: relative;
+    //font-family: PingFangSC-Regular;
+    font-size: rem(18);
+    color: #04BCF6;
+    letter-spacing: 0.17px;
+    padding-left: rem(20);
+    &:before {
+      content: " ";
+      position: absolute;
+      width: rem(3);
+      height: rem(20);
+      margin-top: rem(12);
+      margin-left: rem(-20);
+      background: #04BCF6;;
+    }
+  }
+  p {
+    line-height: 2.5;
+    a {
+      //font-family: PingFangSC-Regular;
+      font-size: rem(18);
+      color: #888888;
+      letter-spacing: 0.17px;
+      &:hover {
+        text-decoration: none;
+        color: #04BCF6;
+      }
+    }
+  }
+}
+.logList {
+  width: 100%;
+  padding-bottom: rem(60);
+  li {
+    display: flex;
+    padding: 0;
+    p {
+      flex: 1;
+      //font-family: PingFangSC-Semibold;
+      font-size: rem(16);
+      color: #5C5C5C;
+      padding: 0 rem(15);
+      letter-spacing: 0.15px;
+      line-height: rem(40);
+    }
+    p:nth-child(1) {
+      text-align: left;
+    }
+    p:nth-child(2) {
+      font-family: PingFangSC-Regular;
+      font-size: rem(16);
+      color: #888888;
+      letter-spacing: 0.15px;
+      line-height: rem(40);
+      text-align: right;
+    }
+  }
+  li:nth-child(even)
+  {
+    background:#f2f2f2;
+  }
+}
+.pageBtns {
+  text-align: center;
+  margin-bottom: rem(74);
+  button:nth-child(1) {
+    padding-left: rem(45);
+    padding-right: rem(45);
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+    color: #888888;
+    margin-right: rem(11);
+  }
+}

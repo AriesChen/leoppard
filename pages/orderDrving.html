@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <!-- 优先使用最新版本的ie和chrome内核 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>LEOPAARD</title>
+
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
+
+  <!-- 调用兼容ie9以下js -->
+  <!--[if lt IE 9]>
+  <script src="../JS/respond.min.js"></script>
+  <script src="../JS/html5.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--for pc header-->
+  <header class="header-content pc-header">
+    <div class="logo">
+      <img src="../assets/img/logo.png" width="170" alt="">
+    </div>
+    <ul>
+      <li><a href="">CS9</a></li>
+      <li><a href="carDetail.html">CS10</a></li>
+      <li><a href="index.html">CT7</a></li>
+      <li class="active"><a href="index.html">预约试驾</a></li>
+    </ul>
+    <div class="menuIcon">
+      <span class="icon-line line_top"></span>
+      <span class="icon-line line_md"></span>
+      <span class="icon-line line_bottom"></span>
+    </div>
+  </header>
+
+  <!-- for mobile header-->
+  <header class="header-content mobile-styles" style="background: #24252C">
+    <ul>
+      <li><img src="../assets/img/logo.png" width="148" alt=""></li>
+      <li style="text-align: right;flex: 3">
+        <div>
+          <span class="icon-line line_top"></span>
+          <span class="icon-line line_md"></span>
+          <span class="icon-line line_bottom"></span>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <div class="newsBanner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p class="newsTitle">预约试驾</p>
+          <p class="subTitle">如果您对试驾某款Leopaard车型感兴趣，请留下联络信息，我们将在短时间内联系您。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="formBody">
+          <p class="titleDesc"></p>
+
+          <p class="formSubTitle">选择车型</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="carbox">
+                <img src="../assets/img/car-cs10.png">
+                <p class="carName">CS10</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="carbox active">
+                <img src="../assets/img/car-cs9.png">
+                <p class="carName">CS9</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="carbox">
+                <img src="../assets/img/car-ct7.png">
+                <p class="carName">CT9</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="formSubTitle">经销商信息</p>
+          <div class="row">
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>选择省 *</option>
+                <option>湖南</option>
+                <option>湖北</option>
+                <option>广东</option>
+                <option>广西</option>
+                <option>河北</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>选择市 *</option>
+                <option>长沙</option>
+                <option>常德</option>
+                <option>株洲</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>选择经销商 *</option>
+                <option>麓谷</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="formSubTitle">试驾者信息</p>
+          <div class="row form-input-height">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="姓名 *">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="性别 *">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="手机 *">
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>您预计多久以后换车？ *</option>
+                <option>1年</option>
+                <option>2年</option>
+                <option>3个月</option>
+              </select>
+            </div>
+          </div>
+          <p class="tips">
+            * 我们会在您的资料提交后的24小时内与您取得联系。未经您的许可，您的资料不会透露给任何第三方。<br>
+            * 试驾请携带驾照，试驾者须满一年驾龄。
+          </p>
+          <div class="btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">确认提交</button>
+          </div>
+          <hr/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="car-detail-footer">
+          <p><img src="../assets/img/btnLogo.png" width="276px"></p>
+          <p>@ 2018 Leopaard All Rights Reserved    湘ICP备13007785号</p>
+          <p><a href="#">招聘贤才</a>  -  <a href="#">关于我们</a>  -  <a href="#">联系我们</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- scripts-->
+<script src="../JS/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+  function removeActive () {
+    $('.carbox').each(function(){
+      $(this).removeClass('active');
+    });
+  }
+  $('.col-md-4').delegate('.carbox', 'click', function(){
+    removeActive();
+    $(this).addClass('active');
+  });
+</script>
+</body>
+</html>
