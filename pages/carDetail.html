@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../css/bootstrap-theme.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="../css/default-skin.css">
   <link rel="stylesheet" href="../css/photoswipe.css">
 
@@ -23,6 +24,23 @@
   <![endif]-->
 </head>
 <body>
+<!-- for pc right menu-->
+  <div class="rightMenu">
+    <div class="menuMask"></div>
+    <div class="menu">
+      <ol>
+        <li><a href="javascript:void(0)"><span class="oi oi-x"></span></a></li>
+        <li><a href="carDetail.html">CS10</a></li>
+        <li><a href="carDetail.html">CS9</a></li>
+        <li><a href="carDetail.html">CRT7</a></li>
+        <li><a href="">新闻中心</a></li>
+        <li><a href="orderDrving.html">预约试驾</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="repair.html">维修平台中心</a></li>
+      </ol>
+    </div>
+  </div>
+
   <header class="header-content pc-header">
     <div class="logo">
       <img src="../assets/img/logo.png" width="170" alt="">
@@ -43,7 +61,7 @@
     <ul>
       <li>CS10</li>
       <li style="text-align: right;flex: 3">
-        <div>
+        <div class="mobileMenuIcon">
           <span class="icon-line line_top"></span>
           <span class="icon-line line_md"></span>
           <span class="icon-line line_bottom"></span>
@@ -79,7 +97,7 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12" style="padding-right: 0;padding-left: 0">
         <div class="sec-banner">
           <img src="../assets/img/carlight.png" width="100%">
           <div class="sec-banner-title">全新 CS10</div>
@@ -214,6 +232,23 @@
   <!--pc端-->
 
   <!--移动端-->
+  <div class="mobile-styles">
+    <div class="mobileMenu">
+      <div class="MenuHeader">
+        <img src="../assets/img/logo.png" alt="" width="90">
+        <span class="oi oi-x mobileX"></span>
+      </div>
+      <ul>
+        <li><a href="">CS10</a></li>
+        <li><a href="">CS9</a></li>
+        <li><a href="">CTR7</a></li>
+        <li><a href="">新闻中心</a></li>
+        <li><a href="">预约试驾</a></li>
+        <li><a href="">维修平台中心</a></li>
+        <li><a href="">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="mobile-DesStyle">
     <div class="container-fluid car-detail">
       <div class="mainTitle">外观设计 Explorer</div>

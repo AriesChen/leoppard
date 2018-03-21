@@ -1,0 +1,120 @@
+.newsContainer {
+   img {
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+  }
+  margin-top: rem(45);
+  margin-bottom: rem(30);
+  .bgNews {
+    .leftBox {
+      position: relative;
+      margin-bottom: rem(14);
+      overflow: hidden;
+      ._imgDesc1 {
+        position: absolute;
+        left: rem(20);
+        bottom: rem(20);
+        right: rem(20);
+        color: #FFFFFF;
+      }
+    }
+    .topBox {
+      position: relative;
+      margin-bottom: rem(14);
+      overflow: hidden;
+      ._imgDesc2 {
+        position: absolute;
+        left: rem(20);
+        bottom: rem(20);
+        right: rem(20);
+        color: #FFFFFF;
+      }
+    }
+    .bottomBox {
+      margin-bottom: rem(14);
+      overflow: hidden;
+      position: relative;
+      ._imgDesc3 {
+        position: absolute;
+        left: rem(20);
+        bottom: rem(20);
+        right: rem(20);
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+._days {
+  //font-family: PingFangSC-Regular;
+  font-size: rem(12);
+  letter-spacing: 0.11px;
+}
+._imgTitle {
+  //font-family: PingFangSC-Medium;
+  line-height: 1.4;
+  font-size: rem(20);
+  letter-spacing: 0.19px;
+}
+._imgText {
+  //font-family: PingFangSC-Regular;
+  line-height: 1.5;
+  font-size: rem(14);
+  letter-spacing: 0.13px;
+}
+._newsList {
+  margin-bottom: rem(47);
+  ._mainTitle {
+    //font-family: PingFangSC-Semibold;
+    font-size: rem(24);
+    color: #404040;
+    letter-spacing: 0.23px;
+  }
+  ._newsBox {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #DCDCDC;
+    padding-top: rem(22);
+    a {
+      display: block;
+      text-decoration: none;
+      ._date {
+        //font-family: PingFangSC-Regular;
+        font-size: rem(12);
+        color: #888888;
+        letter-spacing: 0.11px;
+      }
+      ._newsTitle {
+        //font-family: PingFangSC-Medium;
+        font-size: rem(20);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        line-height: 1.4;
+        color: #404040;
+        letter-spacing: 0.19px;
+        &:hover {
+          color: #04BCF6;
+        }
+      }
+      ._newsDesc {
+        //font-family: PingFangSC-Regular;
+        padding-bottom: rem(16);
+        line-height: 1.6;
+        font-size: rem(14);
+        color: #5C5C5C;
+        letter-spacing: 0.13px;
+      }
+    }
+  }
+}

@@ -8,6 +8,40 @@
 //   htmlDom.style.fontSize = htmlWidth / 10 + 'px';
 // }
 
+//    right menu
+$('.menuIcon').click(function () {
+  $('.menuMask').fadeIn(500);
+  $('.menu').fadeIn(500);
+  //禁止浏览器滚动
+  // document.documentElement.style.overflow='hidden';
+  // document.body.style.overflow='hidden';
+  // var move=function(e){
+  //   e.preventDefault && e.preventDefault();
+  //   e.returnValue=false;
+  //   e.stopPropagation && e.stopPropagation();
+  //   return false;
+  // };
+  // var keyFunc = function(e){
+  //   if(37<=e.keyCode && e.keyCode<=40){
+  //     return move(e);
+  //   }
+  // };
+  // document.body.onkeydown = keyFunc();
+});
+$('.menuMask').click(function () {
+  $('.menuMask').fadeOut(500);
+  $('.menu').fadeOut(500);
+});
+$('.oi-x').click(function () {
+  $('.menuMask').fadeOut(500);
+  $('.menu').fadeOut(500);
+});
+$('.mobileMenuIcon').click(function () {
+  $('.mobileMenu').fadeIn(500);
+});
+$('.mobileX').click(function () {
+  $('.mobileMenu').fadeOut(500);
+});
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
   // parse slide data (url, title, size ...) from DOM elements

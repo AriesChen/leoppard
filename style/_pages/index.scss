@@ -152,9 +152,21 @@ ol, ul {
 .header-content ul{
   display: flex;
   .active {
-    -moz-border-bottom: 2px solid #04BCF6;
-    -ms-border-bottom: 2px solid #04BCF6;
-    border-bottom: 3px solid #04BCF6;
+    a {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: " ";
+        width: rem(50);
+        height: rem(3);
+        top: rem(56);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background: #04BCF6;
+      }
+    }
   }
 }
 .header-content ul li{
@@ -170,15 +182,13 @@ ol, ul {
     -moz-transform: rotate(360deg); /* Firefox 4 */
     -webkit-transform: rotate(360deg); /* Safari and Chrome */
     -o-transform: rotate(360deg); /* Opera */
-    -moz-border-bottom: none;
-    -ms-border-bottom: none;
-    border-bottom: none;
   }
   a {
+    position: relative;
     padding: rem(20) rem(30);
     display: block;
-    text-decoration: none;
     color: #ffffff;
+    text-decoration: none;
   }
 }
 #footer {
@@ -213,6 +223,92 @@ ol, ul {
   -moz-transition: all .33s ease;
   -ms-transition: all .33s ease;
   transition: all .33s ease;
+}
+
+.rightMenu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .menuMask {
+    background: #000000;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+  }
+  .menu {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    width: rem(250);
+    background: #ffffff;
+    height: 100vh;
+    li {
+      padding: 0 rem(20);
+      a {
+        font-size: rem(14);
+        display: block;
+        color: #141414;
+        border-bottom: rem(1) solid #dddddd;
+        padding: rem(20) rem(10);
+        &:hover {
+          text-decoration: none;
+          color: #04BCF6;
+        }
+      }
+    }
+    li:first-child {
+      a {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      text-align: right;
+    }
+  }
+}
+.mobileMenu {
+  display: none;
+  background: #000000;
+  position: fixed;
+  z-index: 999;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  ul {
+    padding: rem(20) rem(40);
+    text-align: center;
+    li {
+      a {
+        font-size: rem(24);
+        padding: rem(20);
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+  .MenuHeader {
+    padding: rem(20) 0 0 rem(15);
+    display: flex;
+    img {
+      flex: 1;
+      text-align: left;
+    }
+    span {
+      flex: 1;
+      text-align: right;
+      padding-right: rem(15);
+    }
+  }
 }
 @media (max-width: 768px) {
   .carsBanner {

@@ -45,6 +45,10 @@
       padding: 0 rem(15);
       letter-spacing: 0.15px;
       line-height: rem(40);
+      a:hover {
+        text-decoration: none;
+        color: #04BCF6;
+      }
     }
     p:nth-child(1) {
       text-align: left;
