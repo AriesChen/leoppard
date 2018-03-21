@@ -173,16 +173,16 @@ ol, ul {
   list-style: none;
   cursor: pointer;
   color: #ffffff;
-  transition: all 0.5s;
-  -moz-transition: all 0.5s, -moz-transform 0.5s; /* Firefox 4 */
-  -webkit-transition: all 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
-  -o-transition: all 0.5s, -o-transform 0.5s; /* Opera */
-  &:hover {
-    transform: rotate(360deg);
-    -moz-transform: rotate(360deg); /* Firefox 4 */
-    -webkit-transform: rotate(360deg); /* Safari and Chrome */
-    -o-transform: rotate(360deg); /* Opera */
-  }
+  //transition: all 0.5s;
+  //-moz-transition: all 0.5s, -moz-transform 0.5s; /* Firefox 4 */
+  //-webkit-transition: all 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
+  //-o-transition: all 0.5s, -o-transform 0.5s; /* Opera */
+  //&:hover {
+  //  transform: rotate(360deg);
+  //  -moz-transform: rotate(360deg); /* Firefox 4 */
+  //  -webkit-transform: rotate(360deg); /* Safari and Chrome */
+  //  -o-transform: rotate(360deg); /* Opera */
+  //}
   a {
     position: relative;
     padding: rem(20) rem(30);
