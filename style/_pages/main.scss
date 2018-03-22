@@ -18,3 +18,58 @@
   background-color: #78c016;
   color: #ffffff;
 }
+.grayBanner {
+  width: 100%;
+  background: #E3E3E3;
+  margin-top: rem(60);
+  margin-bottom: rem(36);
+  ._bannerTitle {
+    //ont-family: PingFangSC-Semibold;
+    font-size: rem(24);
+    padding: rem(34) 0;
+    color: #404040;
+    letter-spacing: 0.23px;
+  }
+  ._bannerPhone {
+    //font-family: PingFangSC-Semibold;
+    font-size: rem(24);
+    color: #888888;
+    padding: rem(34) 0;
+    letter-spacing: 0.23px;
+  }
+}
+.normalText {
+  font-size: rem(16);
+  color: #5C5C5C;
+  letter-spacing: 0.15px;
+  line-height: 1.5;
+  padding-bottom: rem(30);
+}
+.msgBox {
+  line-height: 2;
+  border: 1px solid #C4C4C4;
+  padding: rem(18) rem(20);
+  .msgTitle {
+    font-size: rem(16);
+    color: #404040;
+    letter-spacing: 0.15px;
+  }
+  .msgText {
+    font-size: rem(14);
+    color: #5C5C5C;
+    letter-spacing: 0.13px;
+  }
+}
+@media (max-width: 768px) {
+  .grayBanner {
+    margin-top: rem(50);
+    ._bannerTitle {
+      font-size: rem(22);
+      padding: rem(14) 0 rem(5) 0;
+    }
+    ._bannerPhone {
+      font-size: rem(22);
+      padding: rem(5) 0 rem(14) 0;
+    }
+  }
+}

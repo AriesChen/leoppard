@@ -23,7 +23,7 @@
 </head>
 <body>
   <div class="rightMenu">
-    <div class="menuMask"></div>
+  <div class="menuMask"></div>
     <div class="menu">
       <ol>
         <li><a href="javascript:void(0)"><span class="oi oi-x"></span></a></li>
@@ -39,7 +39,7 @@
       </ol>
     </div>
   </div>
-<!--for pc header-->
+  <!--for pc header-->
   <header class="header-content pc-header">
     <div class="logo">
       <img src="../assets/img/logo.png" width="170" alt="">
@@ -50,8 +50,8 @@
       <li><a href="carDetail.html">CS10</a></li>
       <li><a href="carDetail.html">Q6</a></li>
       <li><a href="index.html">CT7</a></li>
-      <li class="active"><a href="orderDrving.html">预约试驾</a></li>
-      <li><a href="orderDrving.html">购车支持</a></li>
+      <li><a href="orderDrving.html">预约试驾</a></li>
+      <li class="active"><a href="orderDrving.html">购车支持</a></li>
     </ul>
     <div class="menuIcon">
       <span class="icon-line line_top"></span>
@@ -93,12 +93,14 @@
     </ul>
   </header>
 
-  <div class="newsBanner">
+  <div class="grayBanner">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p class="newsTitle">预约试驾</p>
-          <p class="subTitle">如果您对试驾某款Leopaard车型感兴趣，请留下联络信息，我们将在短时间内联系您。</p>
+          <p class="_bannerTitle">在线订车</p>
+        </div>
+        <div class="col-md-4">
+          <p class="_bannerPhone">咨询电话：400-001-8000</p>
         </div>
       </div>
     </div>
@@ -108,9 +110,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="formBody">
-          <p class="titleDesc"></p>
-
-          <p class="formSubTitle">选择车型</p>
+          <p class="formSubTitle" style="padding-top: 0">选择车型</p>
           <div class="row">
             <div class="col-md-4">
               <div class="carbox">
@@ -160,7 +160,8 @@
             </div>
           </div>
 
-          <p class="formSubTitle">试驾者信息</p>
+          <p class="formSubTitle">您的信息</p>
+          <p class="subTitleTips">为了更好试驾体验，我们将通过以下信息联系到您</p>
           <div class="row form-input-height">
             <div class="col-md-6">
               <input type="text" class="form-control" placeholder="姓名 *">
@@ -171,19 +172,7 @@
             <div class="col-md-6">
               <input type="text" class="form-control" placeholder="手机 *">
             </div>
-            <div class="col-md-6">
-              <select class="form-control">
-                <option value="" disabled selected>您预计多久以后换车？ *</option>
-                <option>1年</option>
-                <option>2年</option>
-                <option>3个月</option>
-              </select>
-            </div>
           </div>
-          <p class="tips">
-            * 我们会在您的资料提交后的24小时内与您取得联系。未经您的许可，您的资料不会透露给任何第三方。<br>
-            * 试驾请携带驾照，试驾者须满一年驾龄。
-          </p>
           <div class="btns">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             <button type="button" class="btn btn-primary">确认提交</button>
@@ -207,20 +196,9 @@
     </div>
   </div>
 
-<!-- scripts-->
-<script src="../JS/jquery-1.10.1.min.js"></script>
-<script src="../JS/common.js"></script>
-<script src="../JS/rem.js"></script>
-<script type="text/javascript">
-  function removeActive () {
-    $('.carbox').each(function(){
-      $(this).removeClass('active');
-    });
-  }
-  $('.col-md-4').delegate('.carbox', 'click', function(){
-    removeActive();
-    $(this).addClass('active');
-  });
-</script>
+  <!-- scripts-->
+  <script src="../JS/jquery-1.10.1.min.js"></script>
+  <script src="../JS/common.js"></script>
+  <script src="../JS/rem.js"></script>
 </body>
 </html>
