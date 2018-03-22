@@ -85,6 +85,9 @@ li {
     src: url('../assets/fonts/DINPro-Medium_13936.ttf');
 }
 
+em, i {
+    font-style: normal;
+}
 html, body {
     width: 100%;
 }

@@ -249,3 +249,18 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+
+
+
+// config table event
+$('#ConfigTable').delegate('.basicTr', 'click', function () {
+  var _idx = $(this).attr('data-fold');
+  var status = $(this).attr('data-isOpen');
+  if (status === 'isOpen') {
+    $('.fold-' + _idx).slideUp();
+    $(this).attr('data-isOpen', 'close');
+  } else {
+    $('.fold-' + _idx).slideDown();
+    $(this).attr('data-isOpen', 'isOpen');
+  }
+});

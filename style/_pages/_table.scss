@@ -1,0 +1,23 @@
+.table {
+  .basicTr {
+    background: #e9ecef;
+    text-align: left;
+    font-size: rem(22);
+    cursor: pointer;
+    td {
+      border-bottom: 1px solid #dbdbdb;
+    }
+  }
+  tr {
+    display: table-row;
+    text-align: center;
+  }
+  .headerTitle {
+    text-align: center;
+    padding: rem(40) 0;
+  }
+  .basicTh {
+    text-align: center;
+    vertical-align: middle;
+  }
+}

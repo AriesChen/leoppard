@@ -1,0 +1,20 @@
+.docIcon {
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background: #eee;
+  text-align: center;
+  line-height: rem(24);
+  font-size: rem(12);
+}
+.icon-yes {
+  background-color: #04BCF6;
+  color: #ffffff;
+}
+.icon-select {
+  background-color: #78c016;
+  color: #ffffff;
+}
