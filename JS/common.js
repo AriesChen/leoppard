@@ -42,6 +42,31 @@ $('.mobileMenuIcon').click(function () {
 $('.mobileX').click(function () {
   $('.mobileMenu').fadeOut(500);
 });
+
+//车型选择
+function removeActive () {
+  $('.carbox').each(function(){
+    $(this).removeClass('active');
+  });
+  $('.carStage').find('img').each(function () {
+    $(this).css('display', 'none');
+  });
+}
+function showImg(type) {
+  $('.carStage').find('img').each(function () {
+    var name = $(this).attr('name');
+    if(name === type) {
+      $(this).css('display', 'inline-block');
+    }
+  });
+}
+$('.col-md-2').delegate('.carbox', 'click', function(){
+  removeActive();
+  var type = $(this).children('.carName').attr('type');
+  showImg(type);
+  $(this).addClass('active');
+});
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
   // parse slide data (url, title, size ...) from DOM elements

@@ -267,22 +267,27 @@
   }
 }
 
-.car-detail-footer {
-  height: rem(353);
+.foot-fluid {
+  background: #24252C;
+}
+.page-footer {
+  height: rem(300);
   width: 100%;
-  background: #fff;
   text-align: center;
   p {
     margin-bottom: rem(30);
     font-size: rem(16);
-    color: #888888;
+    color: #989898;
     letter-spacing: 0.15px;
+    a {
+      color: #989898;;
+    }
   }
   p:nth-child(1) {
     padding-top: rem(60);
   }
   p:nth-child(3) {
-    margin-bottom: rem(90);
+    margin-bottom: rem(20);
   }
 }
 .my-gallery {
@@ -356,6 +361,15 @@
       color: #404040;
       letter-spacing: 0.19px;
       padding-bottom: rem(18);
+      padding-top: rem(18);
+    }
+  }
+  .carStage {
+    width: 100%;
+    padding: rem(40) 0;
+    text-align: center;
+    img {
+      display: none;
     }
   }
   .active {
@@ -402,11 +416,18 @@
 .mobile-banner-footer {
   display: none;
 }
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
+//.container-fluid {
+//  padding-left: 0 !important;
+//  padding-right: 0 !important;
+//}
 @media (max-width: 768px) {
+  .formBody {
+    .carbox {
+      .carName {
+        font-size: rem(16);
+      }
+    }
+  }
   .banner {
     .showImg {
       .col-md-3 {
@@ -414,10 +435,6 @@
         padding-left: rem(15);
       }
     }
-  }
-  .container-fluid {
-    padding-left: rem(15) !important;
-    padding-right: rem(15) !important;
   }
   .col-sm-12 {
     padding-left: 0 !important;
@@ -555,15 +572,16 @@
     padding-top: rem(52);
     height: rem(278);
   }
-  .car-detail-footer {
+  .page-footer {
     height: rem(200);
     text-align: center;
     p {
-      margin-bottom: rem(20);
+      margin-bottom: rem(0);
       font-size: rem(14);
+      line-height: 1.5;
     }
     p:nth-child(1) {
-      padding-top: 0;
+      padding-top: rem(45);
     }
     p:nth-child(2) {
       padding: 0 rem(40);
@@ -582,6 +600,7 @@
     display: none;
   }
   .formBody {
+    margin: 0;
     .btns {
       margin-top: rem(40);
       text-align: center;

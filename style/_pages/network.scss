@@ -47,15 +47,16 @@
   color: #4A4A4A;
   letter-spacing: 0.22px;
   padding-bottom: rem(10);
-  //&:after {
-  //  content: "";
-  //  position: absolute;
-  //  bottom: -10px;
-  //  left: 15px;
-  //  height: 2px;
-  //  width: rem(40);
-  //  background: #000;
-  //}
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: rem(40);
+    background: #D0D0D0;
+  }
 }
 .part {
   margin-top: rem(40);

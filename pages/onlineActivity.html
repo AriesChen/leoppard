@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/idangerous.swiper.css">
 
   <!-- 调用兼容ie9以下js -->
   <!--[if lt IE 9]>
@@ -24,22 +25,22 @@
 <body>
   <div class="rightMenu">
   <div class="menuMask"></div>
-    <div class="menu">
-      <ol>
-        <li><a href="javascript:void(0)"><span class="oi oi-x"></span></a></li>
-        <li><a href="carDetail.html">CS9</a></li>
-        <li><a href="carDetail.html">CS9EV</a></li>
-        <li><a href="carDetail.html">CS10</a></li>
-        <li><a href="carDetail.html">Q6</a></li>
-        <li><a href="index.html">CRT7</a></li>
-        <li><a href="news.html">新闻中心</a></li>
-        <li><a href="orderDrving.html">购车支持</a></li>
-        <li><a href="">联系我们</a></li>
-        <li><a href="repair.html">维修平台中心</a></li>
-      </ol>
-    </div>
+  <div class="menu">
+    <ol>
+      <li><a href="javascript:void(0)"><span class="oi oi-x"></span></a></li>
+      <li><a href="carDetail.html">CS9</a></li>
+      <li><a href="carDetail.html">CS9EV</a></li>
+      <li><a href="index.html">CS10</a></li>
+      <li><a href="index.html">Q6</a></li>
+      <li><a href="carDetail.html">CRT7</a></li>
+      <li><a href="news.html">新闻中心</a></li>
+      <li><a href="serverProcess.html">购车支持</a></li>
+      <li><a href="">联系我们</a></li>
+      <li><a href="repair.html">维修平台中心</a></li>
+    </ol>
   </div>
-  <!--for pc header-->
+</div>
+<!--for pc header-->
   <header class="header-content pc-header">
     <div class="logo">
       <img src="../assets/img/logo.png" width="170" alt="">
@@ -51,7 +52,7 @@
       <li><a href="carDetail.html">Q6</a></li>
       <li><a href="index.html">CT7</a></li>
       <li><a href="orderDrving.html">预约试驾</a></li>
-      <li class="active"><a href="orderDrving.html">购车支持</a></li>
+      <li><a href="orderDrving.html">购车支持</a></li>
     </ul>
     <div class="menuIcon">
       <span class="icon-line line_top"></span>
@@ -74,7 +75,7 @@
         <li><a href="index.html">Q6</a></li>
         <li><a href="index.html">CTR7</a></li>
         <li><a href="news.html">新闻中心</a></li>
-        <li><a href="orderDrving.html">购车支持</a></li>
+        <li><a href="serverProcess.html">购车支持</a></li>
         <li><a href="repair.html">维修平台中心</a></li>
         <li><a href="">联系我们</a></li>
       </ul>
@@ -93,11 +94,11 @@
     </ul>
   </header>
 
-  <div class="grayBanner">
+  <div class="grayBanner" style="margin-bottom: 0">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p class="_bannerTitle">在线咨询</p>
+          <p class="_bannerTitle">在线活动</p>
         </div>
         <div class="col-md-4">
           <p class="_bannerPhone">咨询电话：400-001-8000</p>
@@ -106,53 +107,59 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
-        <div class="formBody">
-          <p class="formSubTitle" style="padding-top: 0;">您的信息</p>
-          <p class="subTitleTips">为了更好试驾体验，我们将通过以下信息联系到您</p>
-          <div class="row form-input-height">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="姓名 *">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="性别 *">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="手机 *">
-            </div>
-          </div>
-
-          <p class="formSubTitle">问题内容</p>
-          <p class="subTitleTips">为了更好试驾体验，我们将通过以下信息联系到您</p>
+      <div class="col-md-12 activity" style="background-image: url('../assets/img/banner.png')">
+        <div class="container bannerBox">
           <div class="row">
-            <div class="col-md-6">
-              <select class="form-control">
-                <option value="" disabled selected>车系 *</option>
-                <option>CS9</option>
-                <option>CS9EV</option>
-                <option>CS10</option>
-                <option>Q6</option>
-                <option>CRT7</option>
-              </select>
+            <div class="col-md-1 col-1" style="max-width: 4%">
+              <div class="blueMark"></div>
             </div>
-            <div class="col-md-6">
-              <select class="form-control">
-                <option value="" disabled selected>车型 *</option>
-                <option>SUV</option>
-              </select>
-            </div>
-            <div class="col-md-12" style="margin-top: 20px">
-              <textarea class="form-control" rows="4" placeholder="问题描述 *"></textarea>
+            <div class="col-md-11 col-11">
+              <p class="activityTitle">猎豹汽车新春大钜惠，最高优惠1.2万元</p>
+              <div class="activityDesc">
+                <a href="" class="">查看详情</a>
+                <span>活动时间：2018年02月01日-28日</span>
+              </div>
             </div>
           </div>
-
-          <div class="btns">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-            <button type="button" class="btn btn-primary">确认提交</button>
+        </div>
+        <div class="container siwperBox">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class=" slideBox">
+                  <img src="../assets/img/carlight.png" alt="" width="100%">
+                  <div class="slideText">
+                    <p>赢新春，豹惊喜—幸运获奖车主名单</p>
+                    <p class="smText">活动时间：2018年02月01日-28日</p>
+                    <a href="" class="checkItBtn">查看详情</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=" slideBox">
+                  <img src="../assets/img/carlight.png" alt="" width="100%">
+                  <div class="slideText">
+                    <p>赢新春，豹惊喜—幸运获奖车主名单</p>
+                    <p class="smText">活动时间：2018年02月01日-28日</p>
+                    <a href="" class="checkItBtn">查看详情</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=" slideBox">
+                  <img src="../assets/img/carlight.png" alt="" width="100%">
+                  <div class="slideText">
+                    <p>赢新春，豹惊喜—幸运获奖车主名单</p>
+                    <p class="smText">活动时间：2018年02月01日-28日</p>
+                    <a href="" class="checkItBtn">查看详情</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
           </div>
-          <hr/>
         </div>
       </div>
     </div>
@@ -173,7 +180,18 @@
 
   <!-- scripts-->
   <script src="../JS/jquery-1.10.1.min.js"></script>
+  <script src="../JS/idangerous.swiper.min.js"></script>
   <script src="../JS/common.js"></script>
   <script src="../JS/rem.js"></script>
+  <script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+      autoplay : 5000,//可选选项，自动滑动
+      loop : true,//可选选项，开启循环
+      slidesPerView: 3,
+      visibilityFullFit : true,
+      resizeReInit : true,
+      calculateHeight : true
+    })
+  </script>
 </body>
 </html>
