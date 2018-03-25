@@ -293,8 +293,12 @@
   <script src="../JS/jquery.smoove.min.js"></script>
   <script src="../JS/rem.js"></script>
   <script type="text/javascript">
+    var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    var htmlDom = document.getElementsByTagName('html')[0];
     $(document).ready(function(){
-      $('.block').smoove({offset:'20%'});
+     if (htmlWidth > 768) {
+       $('.block').smoove({offset:'20%'});
+     }
     });
   </script>
 </body>
