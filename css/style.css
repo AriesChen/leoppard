@@ -591,10 +591,6 @@ ol, ul {
   line-height: 1.5;
 }
 
-.car-detail .row:last-child {
-  margin-bottom: 7.125rem;
-}
-
 .car-detail .mainTitle {
   text-align: center;
   padding-top: 4.625rem;
