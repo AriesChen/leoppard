@@ -115,7 +115,7 @@
             <div class="col-md-1 col-1" style="max-width: 4%">
               <div class="blueMark"></div>
             </div>
-            <div class="col-md-11 col-11">
+            <div class="col-md-11 col-10">
               <p class="activityTitle">猎豹汽车新春大钜惠，最高优惠1.2万元</p>
               <div class="activityDesc">
                 <a href="" class="">查看详情</a>
@@ -124,41 +124,41 @@
             </div>
           </div>
         </div>
-        <div class="container siwperBox">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class=" slideBox">
-                  <img src="../assets/img/carlight.png" alt="" width="100%">
-                  <div class="slideText">
-                    <p>赢新春，豹惊喜—幸运获奖车主名单</p>
-                    <p class="smText">活动时间：2018年02月01日-28日</p>
-                    <a href="" class="checkItBtn">查看详情</a>
-                  </div>
+      </div>
+      <div class="container siwperBox">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class=" slideBox">
+                <img src="../assets/img/carlight.png" alt="" width="100%">
+                <div class="slideText">
+                  <p>赢新春，豹惊喜—幸运获奖车主名单</p>
+                  <p class="smText">活动时间：2018年02月01日-28日</p>
+                  <a href="" class="checkItBtn">查看详情</a>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class=" slideBox">
-                  <img src="../assets/img/carlight.png" alt="" width="100%">
-                  <div class="slideText">
-                    <p>赢新春，豹惊喜—幸运获奖车主名单</p>
-                    <p class="smText">活动时间：2018年02月01日-28日</p>
-                    <a href="" class="checkItBtn">查看详情</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class=" slideBox">
-                  <img src="../assets/img/carlight.png" alt="" width="100%">
-                  <div class="slideText">
-                    <p>赢新春，豹惊喜—幸运获奖车主名单</p>
-                    <p class="smText">活动时间：2018年02月01日-28日</p>
-                    <a href="" class="checkItBtn">查看详情</a>
-                  </div>
-                </div>
-              </div>
-              
             </div>
+            <div class="swiper-slide">
+              <div class=" slideBox">
+                <img src="../assets/img/carlight.png" alt="" width="100%">
+                <div class="slideText">
+                  <p>赢新春，豹惊喜—幸运获奖车主名单</p>
+                  <p class="smText">活动时间：2018年02月01日-28日</p>
+                  <a href="" class="checkItBtn">查看详情</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" slideBox">
+                <img src="../assets/img/carlight.png" alt="" width="100%">
+                <div class="slideText">
+                  <p>赢新春，豹惊喜—幸运获奖车主名单</p>
+                  <p class="smText">活动时间：2018年02月01日-28日</p>
+                  <a href="" class="checkItBtn">查看详情</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -184,14 +184,29 @@
   <script src="../JS/common.js"></script>
   <script src="../JS/rem.js"></script>
   <script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container',{
-      autoplay : 5000,//可选选项，自动滑动
-      loop : true,//可选选项，开启循环
-      slidesPerView: 3,
-      visibilityFullFit : true,
-      resizeReInit : true,
-      calculateHeight : true
-    })
+
+    var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    var htmlDom = document.getElementsByTagName('html')[0];
+    $(document).ready(function(){
+      if (htmlWidth > 768) {
+        var mySwiper = new Swiper('.swiper-container',{
+          autoplay : 5000,//可选选项，自动滑动
+          loop : true,//可选选项，开启循环
+          slidesPerView: 3,
+          visibilityFullFit : true,
+          resizeReInit : true,
+          calculateHeight : true
+        })
+      } else {
+        var mySwiper = new Swiper('.swiper-container',{
+          autoplay : 5000,//可选选项，自动滑动
+          loop : true,//可选选项，开启循环
+          visibilityFullFit : true,
+          resizeReInit : true,
+          calculateHeight : true
+        })
+      }
+    });
   </script>
 </body>
 </html>

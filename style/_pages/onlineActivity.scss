@@ -3,50 +3,6 @@
   padding-left: 0;
   height: 100vh;
   position: relative;
-  .siwperBox {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 70%;
-    margin: auto;
-    height: rem(170);
-    z-index: 66;
-    .slideBox {
-      margin-right: rem(10);
-      margin-left: rem(10);
-      height: rem(170);
-      position: relative;
-      .slideText {
-        position: absolute;
-        top: rem(50);
-        left: rem(20);
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        p {
-          font-size: rem(16);
-          line-height: 2;
-          color: #FFFFFF;
-        }
-        .smText {
-          font-size: rem(12);
-        }
-        .checkItBtn {
-          margin-top: rem(10);
-          display: inline-block;
-          padding: rem(5) rem(12);
-          margin-bottom: rem(20);
-          border: rem(1) solid #ffffff;
-          text-align: center;
-          font-size: rem(12);
-          border-radius: rem(85);
-          color: #ffffff;
-          letter-spacing: 0.17px;
-        }
-      }
-    }
-  }
   background-size:cover ;
   .bannerBox {
     text-align: center;
@@ -83,15 +39,149 @@
     }
   }
 }
+
+.siwperBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: auto;
+  height: rem(170);
+  z-index: 66;
+  .slideBox {
+    margin-right: rem(10);
+    margin-left: rem(10);
+    height: rem(170);
+    position: relative;
+    img {
+      height: 100%;
+    }
+    .slideText {
+      position: absolute;
+      top: rem(50);
+      left: rem(20);
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      p {
+        font-size: rem(16);
+        line-height: 2;
+        color: #FFFFFF;
+      }
+      .smText {
+        font-size: rem(12);
+      }
+      .checkItBtn {
+        margin-top: rem(10);
+        display: inline-block;
+        padding: rem(5) rem(12);
+        margin-bottom: rem(20);
+        border: rem(1) solid #ffffff;
+        text-align: center;
+        font-size: rem(12);
+        border-radius: rem(85);
+        color: #ffffff;
+        letter-spacing: 0.17px;
+      }
+    }
+  }
+}
 .blueMark {
   height: rem(125);
   width: rem(8);
   background: #04BCF6;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 412px) {
+  .foot-fluid {
+    position: fixed;
+    bottom: 0;
+  }
+}
+@media (max-width: 515px) {
+  .blueMark {
+    height: rem(80);
+    width: rem(8);
+    background: #04BCF6;
+  }
+ .siwperBox {
+    position: relative;
+    height: rem(170);
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    .slideBox {
+      margin-right: rem(0);
+      margin-left: rem(0);
+      height: rem(170);
+      position: relative;
+      .slideText {
+        position: absolute;
+        top: rem(50);
+        left: rem(20);
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        p {
+          font-size: rem(16);
+          line-height: 2;
+          color: #FFFFFF;
+        }
+        .smText {
+          font-size: rem(12);
+        }
+        .checkItBtn {
+          margin-top: rem(10);
+          display: inline-block;
+          padding: rem(5) rem(12);
+          margin-bottom: rem(20);
+          border: rem(1) solid #ffffff;
+          text-align: center;
+          font-size: rem(12);
+          border-radius: rem(85);
+          color: #ffffff;
+          letter-spacing: 0.17px;
+        }
+      }
+    }
+  }
  .activity {
-   .siwperBox {
-    display: none;
+   height: 100%;
+   background-repeat: no-repeat;
+   .bannerBox {
+     text-align: center;
+     margin-top: rem(30);
+     .activityTitle {
+       //font-family: PingFangSC-Semibold;
+       font-size: rem(26);
+       text-align: left;
+       color: #FFFFFF;
+       letter-spacing: 0.46px;
+       text-shadow: 0 0 14px rgba(0,0,0,0.24);
+       padding-bottom: rem(20);
+     }
+     .activityDesc {
+       text-align: left;
+       a {
+         display: inherit;
+         padding: rem(8) rem(30);
+         margin-bottom: rem(15);
+         border: rem(1) solid #ffffff;
+         text-align: center;
+         font-size: rem(16);
+         border-radius: rem(85);
+         color: #ffffff;
+         letter-spacing: 0.17px;
+         margin-right: rem(21);
+       }
+       span {
+         //font-family: PingFangSC-Medium;
+         font-size: rem(14);
+         color: #FFFFFF;
+         letter-spacing: 0.17px;
+         display: inline-block;
+         padding-bottom: rem(20);
+       }
+     }
    }
  }
 }

@@ -1021,20 +1021,17 @@ ol, ul {
     text-align: center;
     color: #ffffff;
   }
-  .sec-banner img {
-    height: 21.4375rem;
-  }
   .sec-banner .sec-banner-title {
-    top: 2.25rem;
+    top: 1.625rem;
     font-size: 1.5rem;
   }
   .sec-banner .line {
     width: 2.5rem;
-    top: 5.1875rem;
+    top: 3.4375rem;
     height: 0.25rem;
   }
   .sec-banner .sec-banner-content {
-    top: 6.875rem;
+    top: 4.375rem;
     width: 80%;
     font-size: 1rem;
   }
@@ -1705,56 +1702,6 @@ ol, ul {
   background-size: cover;
 }
 
-.activity .siwperBox {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 70%;
-  margin: auto;
-  height: 10.625rem;
-  z-index: 66;
-}
-
-.activity .siwperBox .slideBox {
-  margin-right: 0.625rem;
-  margin-left: 0.625rem;
-  height: 10.625rem;
-  position: relative;
-}
-
-.activity .siwperBox .slideBox .slideText {
-  position: absolute;
-  top: 3.125rem;
-  left: 1.25rem;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.activity .siwperBox .slideBox .slideText p {
-  font-size: 1rem;
-  line-height: 2;
-  color: #FFFFFF;
-}
-
-.activity .siwperBox .slideBox .slideText .smText {
-  font-size: 0.75rem;
-}
-
-.activity .siwperBox .slideBox .slideText .checkItBtn {
-  margin-top: 0.625rem;
-  display: inline-block;
-  padding: 0.3125rem 0.75rem;
-  margin-bottom: 1.25rem;
-  border: 0.0625rem solid #ffffff;
-  text-align: center;
-  font-size: 0.75rem;
-  border-radius: 5.3125rem;
-  color: #ffffff;
-  letter-spacing: 0.17px;
-}
-
 .activity .bannerBox {
   text-align: center;
   margin-top: 4.375rem;
@@ -1792,15 +1739,156 @@ ol, ul {
   letter-spacing: 0.17px;
 }
 
+.siwperBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: auto;
+  height: 10.625rem;
+  z-index: 66;
+}
+
+.siwperBox .slideBox {
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  height: 10.625rem;
+  position: relative;
+}
+
+.siwperBox .slideBox img {
+  height: 100%;
+}
+
+.siwperBox .slideBox .slideText {
+  position: absolute;
+  top: 3.125rem;
+  left: 1.25rem;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.siwperBox .slideBox .slideText p {
+  font-size: 1rem;
+  line-height: 2;
+  color: #FFFFFF;
+}
+
+.siwperBox .slideBox .slideText .smText {
+  font-size: 0.75rem;
+}
+
+.siwperBox .slideBox .slideText .checkItBtn {
+  margin-top: 0.625rem;
+  display: inline-block;
+  padding: 0.3125rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 0.0625rem solid #ffffff;
+  text-align: center;
+  font-size: 0.75rem;
+  border-radius: 5.3125rem;
+  color: #ffffff;
+  letter-spacing: 0.17px;
+}
+
 .blueMark {
   height: 7.8125rem;
   width: 0.5rem;
   background: #04BCF6;
 }
 
-@media (max-width: 768px) {
-  .activity .siwperBox {
-    display: none;
+@media (max-width: 768px) and (min-width: 412px) {
+  .foot-fluid {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 515px) {
+  .blueMark {
+    height: 5rem;
+    width: 0.5rem;
+    background: #04BCF6;
+  }
+  .siwperBox {
+    position: relative;
+    height: 10.625rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .siwperBox .slideBox {
+    margin-right: 0rem;
+    margin-left: 0rem;
+    height: 10.625rem;
+    position: relative;
+  }
+  .siwperBox .slideBox .slideText {
+    position: absolute;
+    top: 3.125rem;
+    left: 1.25rem;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .siwperBox .slideBox .slideText p {
+    font-size: 1rem;
+    line-height: 2;
+    color: #FFFFFF;
+  }
+  .siwperBox .slideBox .slideText .smText {
+    font-size: 0.75rem;
+  }
+  .siwperBox .slideBox .slideText .checkItBtn {
+    margin-top: 0.625rem;
+    display: inline-block;
+    padding: 0.3125rem 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 0.0625rem solid #ffffff;
+    text-align: center;
+    font-size: 0.75rem;
+    border-radius: 5.3125rem;
+    color: #ffffff;
+    letter-spacing: 0.17px;
+  }
+  .activity {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .activity .bannerBox {
+    text-align: center;
+    margin-top: 1.875rem;
+  }
+  .activity .bannerBox .activityTitle {
+    font-size: 1.625rem;
+    text-align: left;
+    color: #FFFFFF;
+    letter-spacing: 0.46px;
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.24);
+    padding-bottom: 1.25rem;
+  }
+  .activity .bannerBox .activityDesc {
+    text-align: left;
+  }
+  .activity .bannerBox .activityDesc a {
+    display: inherit;
+    padding: 0.5rem 1.875rem;
+    margin-bottom: 0.9375rem;
+    border: 0.0625rem solid #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5.3125rem;
+    color: #ffffff;
+    letter-spacing: 0.17px;
+    margin-right: 1.3125rem;
+  }
+  .activity .bannerBox .activityDesc span {
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    letter-spacing: 0.17px;
+    display: inline-block;
+    padding-bottom: 1.25rem;
   }
 }
 
