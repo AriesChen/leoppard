@@ -911,6 +911,9 @@ ol, ul {
 }
 
 @media (max-width: 768px) {
+  .formBody .formTitle {
+    padding-top: 1.25rem;
+  }
   .formBody .carbox .carName {
     font-size: 1rem;
   }
@@ -1022,16 +1025,16 @@ ol, ul {
     color: #ffffff;
   }
   .sec-banner .sec-banner-title {
-    top: 1.625rem;
+    top: 1rem;
     font-size: 1.5rem;
   }
   .sec-banner .line {
     width: 2.5rem;
-    top: 3.4375rem;
+    top: 3rem;
     height: 0.25rem;
   }
   .sec-banner .sec-banner-content {
-    top: 4.375rem;
+    top: 3.75rem;
     width: 80%;
     font-size: 1rem;
   }
@@ -1045,7 +1048,7 @@ ol, ul {
     position: relative;
     text-align: center;
     padding-top: 3.25rem;
-    height: 17.375rem;
+    height: auto;
   }
   .page-footer {
     height: 12.5rem;

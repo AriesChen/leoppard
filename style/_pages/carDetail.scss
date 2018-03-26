@@ -422,6 +422,12 @@
 //}
 @media (max-width: 768px) {
   .formBody {
+    // 改动
+    .formTitle {
+      padding-top: rem(20);
+    }
+    // 改动
+
     .carbox {
       .carName {
         font-size: rem(16);
@@ -540,21 +546,29 @@
   .sec-banner {
     position: relative;
     text-align: center;
+    // 改动 ---删除
+    //img {
+    //  height: rem(343);
+    //}
+    // 改动 ---删除
     color: #ffffff;
     .sec-banner-title {
-      top: rem(26);
+      //top: rem(36); ---改动
+      top: rem(16);
       font-size: rem(24);
     }
     .line {
       width: rem(40);
-      top: rem(55);
+      top: rem(48);
+      //top: rem(83); ---改动
       height: rem(4);
     }
     .sec-banner-content {
       p {
         line-height: 1.5;
       }
-      top: rem(70);
+      //top: rem(110); ----改动
+      top: rem(60);
       width: 80%;
       font-size: rem(16);
     }
@@ -567,7 +581,8 @@
     position: relative;
     text-align: center;
     padding-top: rem(52);
-    height: rem(278);
+    height: auto;
+    //height: rem(278) ---- 改动;
   }
   .page-footer {
     height: rem(200);
