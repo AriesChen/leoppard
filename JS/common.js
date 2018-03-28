@@ -10,6 +10,7 @@
 
 //    right menu
 $('.menuIcon').click(function () {
+  $('.rightMenu').fadeIn(500);
   $('.menuMask').fadeIn(500);
   $('.menu').fadeIn(500);
   //禁止浏览器滚动

@@ -256,8 +256,7 @@ ol, ul {
 
 .rightMenu {
   position: relative;
-  width: 100%;
-  height: 100%;
+  display: none;
 }
 
 .rightMenu .menuMask {
@@ -1609,6 +1608,7 @@ ol, ul {
 
 .table th {
   text-align: center;
+  width: 25%;
 }
 
 .table .priceTr {
@@ -1649,10 +1649,6 @@ ol, ul {
 
 .lift-nav .lift .active {
   color: #04BCF6;
-}
-
-.fixed_header th {
-  width: 25%;
 }
 
 .tableTap {
@@ -1696,7 +1692,58 @@ ol, ul {
   margin-top: 6.25rem;
 }
 
+.tableCol_9 td {
+  width: 11.11%;
+}
+
+.tableCol_9 th {
+  width: 11.11%;
+}
+
+.tableCol_8 td {
+  width: 12.5%;
+}
+
+.tableCol_8 th {
+  width: 12.5%;
+}
+
+.tableCol_7 td {
+  width: 14.29%;
+}
+
+.tableCol_7 th {
+  width: 14.9%;
+}
+
+.tableCol_6 td {
+  width: 16.67%;
+}
+
+.tableCol_6 th {
+  width: 16.67%;
+}
+
+.tableCol_5 td {
+  width: 20%;
+}
+
+.tableCol_5 th {
+  width: 20%;
+}
+
+.tableCol_3 td {
+  width: 33.333%;
+}
+
+.tableCol_3 th {
+  width: 33.333%;
+}
+
 @media (max-width: 768px) {
+  #ConfigTable {
+    display: none;
+  }
   .paddingR0 {
     padding-right: 15px !important;
     padding-left: 15px !important;

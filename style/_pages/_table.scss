@@ -16,6 +16,7 @@
   }
   th {
     text-align: center;
+    width: 25%;
   }
   .priceTr {
    background: #f6ebc7;
@@ -55,11 +56,6 @@
     }
   }
 }
-.fixed_header {
-  th {
-    width: 25%;
-  }
-}
 .tableTap {
   margin-bottom: rem(20);
   a {
@@ -94,7 +90,58 @@
 #ConfigTable {
   margin-top: rem(100);
 }
+.tableCol_9 {
+  td {
+    width: 11.11%;
+  }
+  th {
+    width: 11.11%;
+  }
+}
+.tableCol_8 {
+  td {
+    width: 12.5%;
+  }
+  th {
+    width: 12.5%;
+  }
+}
+.tableCol_7 {
+  td {
+    width: 14.29%;
+  }
+  th {
+    width: 14.9%;
+  }
+}
+.tableCol_6 {
+  td {
+    width: 16.67%;
+  }
+  th {
+    width: 16.67%;
+  }
+}
+.tableCol_5 {
+  td {
+    width: 20%;
+  }
+  th {
+    width: 20%;
+  }
+}
+.tableCol_3 {
+  td {
+    width: 33.333%;
+  }
+  th {
+    width: 33.333%;
+  }
+}
 @media (max-width: 768px) {
+  #ConfigTable {
+    display: none;
+  }
   .paddingR0 {
     padding-right: 15px !important;
     padding-left: 15px !important;

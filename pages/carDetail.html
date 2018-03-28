@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/bootstrap-theme.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/jquery.fullPage.css">
   <link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="../css/default-skin.css">
   <link rel="stylesheet" href="../css/photoswipe.css">
@@ -71,7 +72,9 @@
       </li>
     </ul>
   </header>
-  <div class="carDetail-banner autoChange" style="background-image: url('../assets/img/banner.png')"
+
+  <div id="fullScreen">
+    <div class="carDetail-banner autoChange section" style="background-image: url('../assets/img/banner.png')"
        data-image-url="../assets/img/mobile-car1.jpg">
     <!--<img src="../assets/img/banner.png" width="100%">-->
     <div class="banner-Title">
@@ -94,11 +97,7 @@
       </div>
     </div>
   </div>
-  <div class="mobile-banner-footer">
-    <a data-toggle="modal" data-target="#orderDriver" class="_btn">在线订车</a>
-    <a data-toggle="modal" data-target="#orderDriver" class="_btn">预约试驾</a>
-  </div>
-  <div class="container-fluid">
+    <div class="container-fluid section">
     <div class="row">
       <div class="col-md-12" style="padding-right: 0;padding-left: 0">
         <div class="sec-banner autoChange" style="background-image: url('../assets/img/carlight.png')"
@@ -116,7 +115,12 @@
       </div>
     </div>
   </div>
+  </div>
 
+  <div class="mobile-banner-footer">
+    <a data-toggle="modal" data-target="#orderDriver" class="_btn">在线订车</a>
+    <a data-toggle="modal" data-target="#orderDriver" class="_btn">预约试驾</a>
+  </div>
 
   <div class="container car-detail" id="carColor">
   <div class="mainTitle" style="margin-bottom: 10px">车型颜色 Color</div>
@@ -487,307 +491,396 @@
   <div class="container" id="ConfigTable">
     <div class="row">
       <div class="col-md-2 paddingR0">
+        <!-- data-type 的 table-1对应着table值-->
         <div class="tableTap" data-type="table-1">
           <a href="javascript:void(0)" class="active">1.5T GDI 6AT</a>
         </div>
       </div>
       <div class="col-md-2 paddingR0">
+        <!-- data-type 的 table-2对应着table值-->
         <div class="tableTap" data-type="table-2">
           <a href="javascript:void(0)">1.5T GDI 6MT</a>
         </div>
       </div>
       <div class="col-md-2 paddingR0">
+        <!-- data-type 的 table-2对应着table值-->
         <div class="tableTap" data-type="table-3">
           <a href="javascript:void(0)">1.8T</a>
         </div>
       </div>
     </div>
+
     <div class="row table-1 _table" style="display: flex">
+      <!-- table-1 代表这个表对应的tab值 从1开始 table-1,2,3,...-->
       <div class="col-md-11">
-        <table class="table table-bordered fixed_header">
+        <!-- tableCol_9 后面的9代表这个表有9列 比如有7列就是 tableCol_7-->
+        <table class="table table-bordered tableCol_9">
           <thead>
           <tr>
-            <th scope="col" colspan="2" style="width: 277px">车型名称</th>
-            <th scope="col">2017款 1.5T DCT 网络版</th>
-            <th scope="col">2017款 2.0T 6MT 网络版</th>
-            <th scope="col">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">车型名称</th>
+            <th scope="col" colspan="1">2017款 1.5T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T 6MT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
           </tr>
           <tr class="priceTr">
-            <th scope="col" colspan="2">官方指导价</th>
-            <th scope="col">126,800元</th>
-            <th scope="col">126,800元</th>
-            <th scope="col">2126,800元</th>
+            <th scope="col" colspan="1">官方指导价</th>
+            <th scope="col" colspan="1">126,800元</th>
+            <th scope="col" colspan="1">126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
           </tr>
           </thead>
           <tbody data-table="table-1">
-            <!--技术参数-->
-            <!--基本参数-->
+            <!-- tr basecTr内的data-fold数字对应这部分的数字  data-menu的值对应着右边菜单的值-->
             <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
-              <td colspan="2" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
+              <td colspan="1" style="width: 277px">技术参数</td>
+              <td colspan="8"></td>
             </tr>
             <tr class="fold-1">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
+              <td colspan="1">长 X 宽 X 高</td>
+              <td colspan="8">长 4719 宽1875 高1700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="2">2700</td>
+              <td colspan="6">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="1">轴距 msssm</td>
               <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
               <td colspan="1">2700</td>
               <td colspan="1">2700</td>
               <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="8">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="8">2700</td>
             </tr>
             <!--基本参数-->
             <!--性能参数-->
             <tr  class="fold-1">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
+              <td colspan="1"> 长 X 宽 X 高</td>
+              <td colspan="8">长 4719 宽1875 高1700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
+              <td colspan="7">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="1">2700</td>
               <td colspan="1">2700</td>
               <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <!--性能参数-->
+
+            <!-- tr basecTr内的data-fold 2 数字对应这部分内容tr的fold值  data-menu的值对应着右边菜单的值-->
+            <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_2">
+              <td colspan="1" style="width: 277px">技术参数</td>
+              <td colspan="8"></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="1">长 X 宽 X 高</td>
+              <td colspan="8">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="2">2700</td>
+              <td colspan="6">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 msssm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="8">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="8">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-2">
+              <td colspan="1"> 长 X 宽 X 高</td>
+              <td colspan="8">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="7">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <tr  class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="3">2700</td>
+              <td colspan="3">2700</td>
+              <td colspan="2">2700</td>
             </tr>
 
-            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_2">
-              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
+            <!-- tr basecTr内的data-fold 3 数字对应这部分内容tr的fold值  data-menu的值对应着右边菜单的值-->
+            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_3">
+              <td colspan="1" style="width: 277px">技术参数</td>
+              <td colspan="8"></td>
             </tr>
             <tr class="fold-3">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
+              <td colspan="1">长 X 宽 X 高</td>
+              <td colspan="8">长 4719 宽1875 高1700</td>
             </tr>
             <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="2">2700</td>
+              <td colspan="6">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 msssm</td>
               <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
               <td colspan="1">2700</td>
               <td colspan="1">2700</td>
               <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
             </tr>
             <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
+              <td colspan="2">2700</td>
             </tr>
             <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="8">2700</td>
             </tr>
             <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+              <td colspan="1">轴距 mm</td>
+              <td colspan="8">2700</td>
             </tr>
             <!--基本参数-->
             <!--性能参数-->
             <tr  class="fold-3">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--性能参数-->
-
-
-            <!--安全设备-->
-            <!--主动安全-->
-            <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_3">
-              <td colspan="2" class="part2">安全设备</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
+              <td colspan="1"> 长 X 宽 X 高</td>
+              <td colspan="1">轴距 mm</td>
               <td colspan="1"><i class="docIcon icon-yes">标</i></td>
               <td colspan="1"><i class="docIcon">-</i></td>
               <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
               <td colspan="1"><i class="docIcon icon-yes">标</i></td>
               <td colspan="1"><i class="docIcon">-</i></td>
               <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 mm</td>
               <td colspan="1"><i class="docIcon icon-yes">标</i></td>
               <td colspan="1"><i class="docIcon">-</i></td>
               <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
               <td colspan="1"><i class="docIcon icon-yes">标</i></td>
               <td colspan="1"><i class="docIcon">-</i></td>
               <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 mm</td>
               <td colspan="1"><i class="docIcon icon-yes">标</i></td>
               <td colspan="1"><i class="docIcon">-</i></td>
               <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
               <td colspan="1"><i class="docIcon icon-yes">标</i></td>
               <td colspan="1"><i class="docIcon">-</i></td>
               <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <!--被动安全-->
-            <!--安全设备-->
-            <tr class="basicTr" data-fold="4" data-isOpen="isOpen" data-menu="menu_4">
-              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr class="fold-4">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
+            <tr  class="fold-3">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+            <tr class="fold-3">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
+            <tr class="fold-3">
+              <td colspan="1">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
             </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--基本参数-->
-            <!--性能参数-->
-            <tr  class="fold-4">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--性能参数-->
-      </tbody>
+          </tbody>
         </table>
       </div>
       <div class="col-md-1">
@@ -796,532 +889,711 @@
             <li data-menu="menu_1">基本参数</li>
             <li data-menu="menu_2">安全设备1</li>
             <li data-menu="menu_3">安全设备2</li>
-            <li data-menu="menu_4">安全设备3</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="row table-2 _table" style="display: none">
+      <!-- table-2 代表这个表对应的tab值 从1开始 table-1,2,3,...-->
       <div class="col-md-11">
-        <table class="table table-bordered fixed_header">
+        <!-- tableCol_9 后面的9代表这个表有9列 比如有7列就是 tableCol_7-->
+        <table class="table table-bordered tableCol_8">
           <thead>
           <tr>
-            <th scope="col" colspan="2" style="width: 277px">车型名称</th>
-            <th scope="col">2017款 1.5T DCT 网络版</th>
-            <th scope="col">2017款 2.0T 6MT 网络版</th>
-            <th scope="col">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">车型名称</th>
+            <th scope="col" colspan="1">2017款 1.5T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T 6MT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
           </tr>
           <tr class="priceTr">
-            <th scope="col" colspan="2">官方指导价</th>
-            <th scope="col">126,800元</th>
-            <th scope="col">126,800元</th>
-            <th scope="col">2126,800元</th>
+            <th scope="col" colspan="1">官方指导价</th>
+            <th scope="col" colspan="1">126,800元</th>
+            <th scope="col" colspan="1">126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
           </tr>
           </thead>
+          <!-- data-table的值对应着table的值-->
           <tbody data-table="table-2">
-            <!--技术参数-->
-            <!--基本参数-->
-            <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
-              <td colspan="2" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-1">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--基本参数-->
-            <!--性能参数-->
-            <tr  class="fold-1">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
+          <!-- tr basecTr内的data-fold数字对应这部分的数字  data-menu的值对应着右边菜单的值-->
+          <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
+            <td colspan="1" style="width: 277px">技术参数</td>
+            <td colspan="7"></td>
+          </tr>
+          <tr class="fold-1">
+            <td colspan="1">长 X 宽 X 高</td>
+            <td colspan="7">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="5">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 msssm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <!--基本参数-->
+          <!--性能参数-->
+          <tr  class="fold-1">
+            <td colspan="1"> 长 X 宽 X 高</td>
+            <td colspan="7">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <!--性能参数-->
 
-            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_2">
-              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-3">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--基本参数-->
-            <!--性能参数-->
-            <tr  class="fold-3">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--性能参数-->
+          <!-- tr basecTr内的data-fold 2 数字对应这部分内容tr的fold值  data-menu的值对应着右边菜单的值-->
+          <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_2">
+            <td colspan="1" style="width: 277px">技术参数</td>
+            <td colspan="8"></td>
+          </tr>
+          <tr class="fold-2">
+            <td colspan="1">长 X 宽 X 高</td>
+            <td colspan="7">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="5">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 msssm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <!--基本参数-->
+          <!--性能参数-->
+          <tr  class="fold-2">
+            <td colspan="1"> 长 X 宽 X 高</td>
+            <td colspan="7">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1">2700</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
 
-
-            <!--安全设备-->
-            <!--主动安全-->
-            <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_3">
-              <td colspan="2" class="part2">安全设备</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <!--被动安全-->
-            <!--安全设备-->
-      </tbody>
+          <!-- tr basecTr内的data-fold 3 数字对应这部分内容tr的fold值  data-menu的值对应着右边菜单的值-->
+          <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_3">
+            <td colspan="1" style="width: 277px">技术参数</td>
+            <td colspan="8"></td>
+          </tr>
+          <tr class="fold-3">
+            <td colspan="1">长 X 宽 X 高</td>
+            <td colspan="7">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="5">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 msssm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="7">2700</td>
+          </tr>
+          <!--基本参数-->
+          <!--性能参数-->
+          <tr  class="fold-3">
+            <td colspan="1"> 长 X 宽 X 高</td>
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          </tbody>
         </table>
       </div>
       <div class="col-md-1">
         <div class="lift-nav table-2">
           <ul class="lift">
             <li data-menu="menu_1">基本参数</li>
-            <li data-menu="menu_2">安全设备</li>
-            <li data-menu="menu_3">安全设备</li>
+            <li data-menu="menu_2">安全设备1</li>
+            <li data-menu="menu_3">安全设备2</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="row table-3 _table" style="display: none">
+      <!-- table-2 代表这个表对应的tab值 从1开始 table-1,2,3,...-->
       <div class="col-md-11">
-        <table class="table table-bordered fixed_header">
+        <!-- tableCol_9 后面的9代表这个表有9列 比如有7列就是 tableCol_7-->
+        <table class="table table-bordered tableCol_7">
           <thead>
           <tr>
-            <th scope="col" colspan="2" style="width: 277px">车型名称</th>
-            <th scope="col">2017款 1.5T DCT 网络版</th>
-            <th scope="col">2017款 2.0T 6MT 网络版</th>
-            <th scope="col">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">车型名称</th>
+            <th scope="col" colspan="1">2017款 1.5T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T 6MT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
+            <th scope="col" colspan="1">2017款 2.0T DCT 网络版</th>
           </tr>
           <tr class="priceTr">
-            <th scope="col" colspan="2">官方指导价</th>
-            <th scope="col">126,800元</th>
-            <th scope="col">126,800元</th>
-            <th scope="col">2126,800元</th>
+            <th scope="col" colspan="1">官方指导价</th>
+            <th scope="col" colspan="1">126,800元</th>
+            <th scope="col" colspan="1">126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
+            <th scope="col" colspan="1">2126,800元</th>
           </tr>
           </thead>
+          <!-- data-table的值对应着table的值-->
           <tbody data-table="table-3">
-            <!--技术参数-->
-            <!--基本参数-->
-            <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
-              <td colspan="2" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-1">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--基本参数-->
-            <!--性能参数-->
-            <tr  class="fold-1">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-1">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
+          <!-- tr basecTr内的data-fold数字对应这部分的数字  data-menu的值对应着右边菜单的值-->
+          <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
+            <td colspan="1" style="width: 277px">技术参数</td>
+            <td colspan="6"></td>
+          </tr>
+          <tr class="fold-1">
+            <td colspan="1">长 X 宽 X 高</td>
+            <td colspan="6">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="4">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 msssm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <!--基本参数-->
+          <!--性能参数-->
+          <tr  class="fold-1">
+            <td colspan="1"> 长 X 宽 X 高</td>
+            <td colspan="6">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-1">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <!--性能参数-->
 
-            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_2">
-              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-3">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--基本参数-->
-            <!--性能参数-->
-            <tr  class="fold-3">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-3">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--性能参数-->
+          <!-- tr basecTr内的data-fold 2 数字对应这部分内容tr的fold值  data-menu的值对应着右边菜单的值-->
+          <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_2">
+            <td colspan="1" style="width: 277px">技术参数</td>
+            <td colspan="8"></td>
+          </tr>
+          <tr class="fold-2">
+            <td colspan="1">长 X 宽 X 高</td>
+            <td colspan="6">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="4">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 msssm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <!--基本参数-->
+          <!--性能参数-->
+          <tr  class="fold-2">
+            <td colspan="1"> 长 X 宽 X 高</td>
+            <td colspan="6">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1">2700</td>
+            <td colspan="5">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr  class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
+          <tr class="fold-2">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="3">2700</td>
+            <td colspan="3">2700</td>
+          </tr>
 
-
-            <!--安全设备-->
-            <!--主动安全-->
-            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_3">
-              <td colspan="2" class="part2">安全设备</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <tr class="fold-2">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-              <td colspan="1"><i class="docIcon">-</i></td>
-              <td colspan="1"><i class="docIcon icon-select">选</i></td>
-            </tr>
-            <!--被动安全-->
-            <!--安全设备-->
-
-            <tr class="basicTr" data-fold="4" data-isOpen="isOpen" data-menu="menu_4">
-              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="fold-4">
-              <td colspan="2">长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--基本参数-->
-            <!--性能参数-->
-            <tr  class="fold-4">
-              <td colspan="2"> 长 X 宽 X 高</td>
-              <td colspan="3">长 4719 宽1875 高1700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-              <td colspan="1">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <tr  class="fold-4">
-              <td colspan="2">轴距 mm</td>
-              <td colspan="3">2700</td>
-            </tr>
-            <!--性能参数-->
-      </tbody>
+          <!-- tr basecTr内的data-fold 3 数字对应这部分内容tr的fold值  data-menu的值对应着右边菜单的值-->
+          <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_3">
+            <td colspan="1" style="width: 277px">技术参数</td>
+            <td colspan="8"></td>
+          </tr>
+          <tr class="fold-3">
+            <td colspan="1">长 X 宽 X 高</td>
+            <td colspan="6">长 4719 宽1875 高1700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="4">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 msssm</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+            <td colspan="1">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+            <td colspan="2">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="6">2700</td>
+          </tr>
+          <!--基本参数-->
+          <!--性能参数-->
+          <tr  class="fold-3">
+            <td colspan="1"> 长 X 宽 X 高</td>
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr  class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          <tr class="fold-3">
+            <td colspan="1">轴距 mm</td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+            <td colspan="1"><i class="docIcon">-</i></td>
+            <td colspan="1"><i class="docIcon icon-select">选</i></td>
+          </tr>
+          </tbody>
         </table>
       </div>
       <div class="col-md-1">
-        <div class="lift-nav table-3">
+        <div class="lift-nav table-2">
           <ul class="lift">
             <li data-menu="menu_1">基本参数</li>
             <li data-menu="menu_2">安全设备1</li>
             <li data-menu="menu_3">安全设备2</li>
-            <li data-menu="menu_4">安全设备3</li>
           </ul>
         </div>
       </div>
@@ -1525,12 +1797,23 @@
   <script src="../JS/photoswipe.min.js"></script>
   <script src="../JS/rem.js"></script>
   <script src="../JS/common.js"></script>
+  <script src="../JS/jquery.fullPage.min.js"></script>
   <script type="text/javascript">
-
-    // table事件
 
     $(document).ready(function(){
       $('.block').smoove({offset:'20%'});
+      $('#fullScreen').fullpage({
+        afterLoad: function(anchorLink, index){
+          if (index == 2) {
+            $.fn.fullpage.setAutoScrolling(false);
+          }
+        }
+      });
+      $(window).scroll(function(){
+        if ($(document).scrollTop()<=0){
+          $.fn.fullpage.setAutoScrolling(true);
+        }
+      });
       var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
        if (htmlWidth < 768) {
          $('.autoChange').each(function () {
@@ -1538,8 +1821,6 @@
            $(this).css('background-image', 'url('+ url + ')');
          });
        }
-
-
     });
     $(".targetGo").delegate('a', 'click', function () {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
