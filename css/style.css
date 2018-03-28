@@ -350,14 +350,30 @@ ol, ul {
   padding-right: 0.9375rem;
 }
 
+.pullTips {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 50%;
+}
+
+.pullTips span {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
+  .rightMenu {
+    display: none;
+  }
   .carsBanner {
     width: 100%;
+    position: relative;
     text-align: center;
+    height: 100vh;
   }
   .carsBanner .carType {
     font-family: DINPro-Medium;
-    margin-top: 4.125rem;
+    padding-top: 8.4375rem;
     font-size: 1.5rem;
     color: #404040;
     letter-spacing: 0.23px;
@@ -369,22 +385,19 @@ ol, ul {
     letter-spacing: 0.15px;
   }
   .carsBanner .carImages {
-    margin-top: 2.1875rem;
+    line-height: 0;
+    bottom: 0;
     height: auto;
-    position: relative;
+    position: absolute;
   }
   .carsBanner .carImages img {
     background-size: cover;
     width: 100%;
   }
-  .carsBanner .carImages .bannerBtn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  .carsBanner .bannerBtn {
+    margin: 1.875rem 0;
   }
-  .carsBanner .carImages .bannerBtn ._btn {
+  .carsBanner .bannerBtn ._btn {
     border: 0.0625rem solid #888888;
     font-size: 0.875rem;
     border-radius: 6.25rem;
@@ -398,7 +411,7 @@ ol, ul {
     display: inline-block;
     margin-left: 0.9375rem;
   }
-  .carsBanner .carImages .bannerBtn ._btn:nth-child(2) {
+  .carsBanner .bannerBtn ._btn:nth-child(2) {
     color: #04BCF6;
     border-color: #04BCF6;
   }
@@ -433,12 +446,15 @@ ol, ul {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-size: cover;
   line-height: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner-footer {
   width: 100%;
+  height: 3.75rem;
   position: fixed;
   bottom: 0;
   z-index: 9;
@@ -455,14 +471,16 @@ ol, ul {
 }
 
 .banner-footer .container ul li {
-  padding: 1.5625rem 1.25rem;
   list-style: none;
-  line-height: 1;
   cursor: pointer;
 }
 
 .banner-footer .container ul li a {
   color: #ffffff;
+  display: inline-block;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  padding: 0 1.875rem;
 }
 
 .banner-footer .container ul li:hover {
@@ -484,7 +502,8 @@ ol, ul {
   color: #FFFFFF;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 0.625rem 1.25rem;
+  height: 2.5rem;
+  line-height: 2.25rem;
   display: inline-block;
   margin-left: 0.9375rem;
 }
@@ -498,7 +517,7 @@ ol, ul {
   text-align: right;
   flex: 2;
   padding: 0;
-  margin-top: 0.9375rem;
+  margin-top: 0.625rem;
 }
 
 .banner-footer .container ul li:last-child:hover {
@@ -540,47 +559,22 @@ ol, ul {
 
 .sec-banner {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-}
-
-.sec-banner .sec-banner-title {
-  position: absolute;
-  top: 6rem;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  font-family: "DINPro-Medium", "Microsoft YaHei";
-  font-size: 2.25rem;
-  letter-spacing: 0.34px;
-  z-index: 10;
-}
-
-.sec-banner .line {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #04BCF6;
-  width: 2.5rem;
-  top: 9.375rem;
-  height: 2px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  z-index: 11;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .sec-banner .sec-banner-content {
   position: absolute;
-  top: 13.125rem;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  left: 3.75rem;
+  bottom: 8.125rem;
   font-family: PingFangHK-Regular;
   width: 53%;
   line-height: normal;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 0.19px;
@@ -589,6 +583,19 @@ ol, ul {
 
 .sec-banner .sec-banner-content p {
   line-height: 1.5;
+  margin-top: 1.25rem;
+}
+
+.sec-banner .sec-banner-content .sec-banner-title {
+  font-family: "DINPro-Medium", "Microsoft YaHei";
+  font-size: 2.25rem;
+  letter-spacing: 0.34px;
+}
+
+.sec-banner .sec-banner-content .line {
+  margin-top: 1.25rem;
+  border-bottom: 2px solid #04BCF6;
+  width: 2.5rem;
 }
 
 .car-detail .mainTitle {
@@ -910,6 +917,32 @@ ol, ul {
   display: none;
 }
 
+.car-color {
+  text-align: center;
+}
+
+.car-color ul {
+  display: inline-block;
+}
+
+.car-color ul li {
+  display: inline-block;
+  width: 7.5rem;
+  margin: 1.25rem;
+}
+
+.car-color ul .color-item {
+  width: 8.125rem;
+  height: 1.875rem;
+}
+
+.car-color ul .color-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #231815;
+  margin-top: 1.5625rem;
+}
+
 @media (max-width: 768px) {
   .formBody .formTitle {
     padding-top: 1.25rem;
@@ -1019,27 +1052,14 @@ ol, ul {
     color: #04BCF6;
     border-color: #04BCF6;
   }
-  .sec-banner {
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-  }
-  .sec-banner .sec-banner-title {
-    top: 1rem;
-    font-size: 1.5rem;
-  }
-  .sec-banner .line {
-    width: 2.5rem;
-    top: 3rem;
-    height: 0.25rem;
-  }
   .sec-banner .sec-banner-content {
+    left: 2.5rem;
     top: 3.75rem;
     width: 80%;
-    font-size: 1rem;
   }
   .sec-banner .sec-banner-content p {
     line-height: 1.5;
+    margin-top: 1.25rem;
   }
   .mobile-header {
     display: block;
@@ -1048,7 +1068,6 @@ ol, ul {
     position: relative;
     text-align: center;
     padding-top: 3.25rem;
-    height: auto;
   }
   .page-footer {
     height: 12.5rem;
@@ -1072,7 +1091,8 @@ ol, ul {
     width: 13.75rem;
   }
   .banner-Title {
-    display: none;
+    left: 2.5rem;
+    bottom: 5rem;
   }
   .banner-footer {
     display: none;
@@ -1568,10 +1588,14 @@ ol, ul {
   }
 }
 
+.table {
+  position: relative;
+}
+
 .table .basicTr {
-  background: #e9ecef;
-  text-align: left;
-  font-size: 1.375rem;
+  background: #414141;
+  text-align: center;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -1579,19 +1603,104 @@ ol, ul {
   border-bottom: 1px solid #dbdbdb;
 }
 
+.table thead {
+  display: block;
+}
+
+.table th {
+  text-align: center;
+}
+
+.table .priceTr {
+  background: #f6ebc7;
+  text-align: center;
+}
+
 .table tr {
   display: table-row;
   text-align: center;
 }
 
-.table .headerTitle {
-  text-align: center;
-  padding: 2.5rem 0;
+.table td {
+  width: 25%;
+  padding: 0.9375rem 0;
 }
 
 .table .basicTh {
   text-align: center;
   vertical-align: middle;
+}
+
+.table tbody {
+  height: 37.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  display: block;
+}
+
+.lift-nav .lift li {
+  cursor: pointer;
+  padding: 1.25rem 0;
+  color: #dddddd;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+.lift-nav .lift .active {
+  color: #04BCF6;
+}
+
+.fixed_header th {
+  width: 25%;
+}
+
+.tableTap {
+  margin-bottom: 1.25rem;
+}
+
+.tableTap a {
+  cursor: pointer;
+  background: #ffffff;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #000000;
+  color: #000;
+  padding: 0.625rem;
+}
+
+.tableTap a:hover {
+  text-decoration: none;
+  color: #04BCF6;
+}
+
+.tableTap .active {
+  background: #000;
+  color: #fff !important;
+}
+
+.paddingR0 {
+  padding-right: 0 !important;
+}
+
+.configTips {
+  font-size: 0.8125rem;
+  color: #888888;
+  padding-top: 0.625rem;
+  line-height: 1.5;
+  margin-bottom: 3.75rem;
+}
+
+#ConfigTable {
+  margin-top: 6.25rem;
+}
+
+@media (max-width: 768px) {
+  .paddingR0 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
 }
 
 .docIcon {
@@ -1672,6 +1781,28 @@ ol, ul {
   width: 20%;
   max-width: 20%;
   flex: initial;
+}
+
+.arrow-left {
+  background: url(../assets/img/arrows.png) no-repeat left top;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 999;
+}
+
+.arrow-right {
+  background: url(../assets/img/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 999;
 }
 
 @media (max-width: 768px) {

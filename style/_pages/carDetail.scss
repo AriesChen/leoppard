@@ -2,11 +2,14 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-size: cover;
   line-height: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .banner-footer {
   width: 100%;
+  height: rem(60);
   position: fixed;
   bottom: 0;
   z-index: 9;
@@ -19,12 +22,14 @@
   .container ul{
     display: flex;
     li {
-      padding: rem(25) rem(20);
       list-style: none;
-      line-height: 1;
       cursor: pointer;
       a {
         color: #ffffff;
+        display: inline-block;
+        height: rem(60);
+        line-height: rem(60);
+        padding: 0 rem(30);
       }
       &:hover {
         background: #0f497b;
@@ -43,7 +48,8 @@
         color: #FFFFFF;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: rem(10) rem(20);
+        height: rem(40);
+        line-height: rem(36);
         display: inline-block;
         margin-left: rem(15);
       }
@@ -59,7 +65,7 @@
       text-align: right;
       flex: 2;
       padding: 0;
-      margin-top: rem(15);
+      margin-top: rem(10);
     }
   }
 }
@@ -93,50 +99,39 @@
 }
 .sec-banner {
   position: relative;
-  text-align: center;
+  text-align: left; // 鏀瑰姩
   color: #ffffff;
-  .sec-banner-title {
-    position: absolute;
-    top: rem(96);
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin:auto;
-    font-family: "DINPro-Medium", "Microsoft YaHei";
-    font-size: rem(36);
-    letter-spacing: 0.34px;
-    z-index: 10;
-  }
-  .line {
-    position: absolute;
-    content: "";
-    border-bottom: 2px solid #04BCF6;
-    width: rem(40);
-    top: rem(150);
-    height: 2px;
-    right: 0;
-    left: 0;
-    margin:auto;
-    z-index: 11;
-  }
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
   .sec-banner-content {
     p {
       line-height: 1.5;
+      margin-top: rem(20);
     }
     position: absolute;
-    top: rem(210);
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin:auto;
+    left: rem(60);
+    bottom: rem(130);
     font-family: PingFangHK-Regular;
     width: 53%;
     line-height: normal;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     color: #FFFFFF;
     letter-spacing: 0.19px;
     z-index: 10;
+    .sec-banner-title {
+      font-family: "DINPro-Medium", "Microsoft YaHei";
+      font-size: rem(36);
+      letter-spacing: 0.34px;
+    }
+    .line {
+      //margin-left: rem(60);
+      margin-top: rem(20);
+      border-bottom: 2px solid #04BCF6;
+      width: rem(40);
+    }
   }
 }
 .car-detail {
@@ -416,17 +411,39 @@
 .mobile-banner-footer {
   display: none;
 }
+
+.car-color {
+  text-align: center;
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      width: rem(120);
+      margin: rem(20);
+    }
+    .color-item {
+      width: rem(130);
+      height: rem(30);
+    }
+    .color-text {
+      text-align: center;
+      font-size: rem(16);
+      color: #231815;
+      margin-top: rem(25);
+    }
+  }
+}
 //.container-fluid {
 //  padding-left: 0 !important;
 //  padding-right: 0 !important;
 //}
 @media (max-width: 768px) {
   .formBody {
-    // 改动
+    // 锟侥讹拷
     .formTitle {
       padding-top: rem(20);
     }
-    // 改动
+    // 锟侥讹拷
 
     .carbox {
       .carName {
@@ -544,33 +561,14 @@
   }
 
   .sec-banner {
-    position: relative;
-    text-align: center;
-    // 改动 ---删除
-    //img {
-    //  height: rem(343);
-    //}
-    // 改动 ---删除
-    color: #ffffff;
-    .sec-banner-title {
-      //top: rem(36); ---改动
-      top: rem(16);
-      font-size: rem(24);
-    }
-    .line {
-      width: rem(40);
-      top: rem(48);
-      //top: rem(83); ---改动
-      height: rem(4);
-    }
     .sec-banner-content {
+      left: rem(40);
+      top: rem(60);
       p {
         line-height: 1.5;
+        margin-top: rem(20);
       }
-      //top: rem(110); ----改动
-      top: rem(60);
       width: 80%;
-      font-size: rem(16);
     }
   }
 
@@ -581,8 +579,7 @@
     position: relative;
     text-align: center;
     padding-top: rem(52);
-    height: auto;
-    //height: rem(278) ---- 改动;
+    //height: rem(278) ---- 锟侥讹拷;
   }
   .page-footer {
     height: rem(200);
@@ -606,7 +603,8 @@
     }
   }
   .banner-Title {
-    display: none;
+    left: rem(40);
+    bottom: rem(80);
   }
   .banner-footer {
     display: none;

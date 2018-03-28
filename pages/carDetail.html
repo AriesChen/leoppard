@@ -60,6 +60,7 @@
   </header>
   <header class="header-content mobile-header">
     <ul>
+      <li><img src="../assets/img/logo.png" alt="" width="90"></li>
       <li>CS10</li>
       <li style="text-align: right;flex: 3">
         <div class="mobileMenuIcon">
@@ -70,15 +71,16 @@
       </li>
     </ul>
   </header>
-  <div class="carDetail-banner">
-    <img src="../assets/img/banner.png" width="100%" height="100%">
+  <div class="carDetail-banner autoChange" style="background-image: url('../assets/img/banner.png')"
+       data-image-url="../assets/img/mobile-car1.jpg">
+    <!--<img src="../assets/img/banner.png" width="100%">-->
     <div class="banner-Title">
       <p>CS10</p>
       <p>卓尔不凡</p>
     </div>
     <div class="banner-footer">
       <div class="container">
-        <ul>
+        <ul class="targetGo">
           <li><a href="#outlook">外观设计</a></li>
           <li><a href="#Interior">内饰设计</a></li>
           <li><a href="#Driving">舒适操控</a></li>
@@ -99,11 +101,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12" style="padding-right: 0;padding-left: 0">
-        <div class="sec-banner">
-          <img src="../assets/img/carlight.png" width="100%">
-          <div class="sec-banner-title">全新 CS10</div>
-          <div class="line"></div>
+        <div class="sec-banner autoChange" style="background-image: url('../assets/img/carlight.png')"
+             data-image-url="../assets/img/mobile-car2.jpg">
+          <!--<img src="../assets/img/carlight.png" width="100%" height="100%">-->
           <div class="sec-banner-content">
+            <div class="sec-banner-title">全新 CS10</div>
+            <div class="line"></div>
             <p>
               进取而精炼，新猎豹CS10展现出设计的大胆和魄力。令人惊叹的强劲动力和一流技术，
               让您在每一次转向中感受速度与激情，尽释潜能。
@@ -114,27 +117,62 @@
     </div>
   </div>
 
+
+  <div class="container car-detail" id="carColor">
+  <div class="mainTitle" style="margin-bottom: 10px">车型颜色 Color</div>
+  <div class="row car-color">
+    <div class="col-md-12 block">
+      <ul>
+        <li>
+          <div class="color-item">
+            <img src="../assets/img/color_black.jpg" alt="" width="100%">
+          </div>
+          <p class="color-text">月光白</p>
+        </li>
+        <li>
+          <div class="color-item">
+            <img src="../assets/img/color_blue.jpg" alt="" width="100%">
+          </div>
+          <p class="color-text">霓虹</p>
+        </li>
+        <li>
+          <div class="color-item">
+            <img src="../assets/img/color_gold.jpg" alt="" width="100%">
+          </div>
+          <p class="color-text">尊贵黑</p>
+        </li>
+        <li>
+          <div class="color-item">
+            <img src="../assets/img/color_black.jpg" alt="" width="100%">
+          </div>
+          <p class="color-text">大地棕</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
   <!--pc端-->
   <div class="ps-DesStyle">
     <div class="container car-detail" id="outlook">
       <div class="mainTitle">外观设计 Explorer</div>
       <div class="row">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block">
           <div class="car-introduction">
             <h4 class="detail-title">矩阵式自动LED大灯</h4>
             <p>当汽车行驶进入隧道、或者天气突然下雨中光线变暗，
               夜幕降临时，光线感应系统感应到光线变暗后几秒内发出信号让前大灯会自动亮起，有效保护车内人员以及周边行人安全。</p>
           </div>
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block">
           <img src="../assets/img/img1.png" alt="" width="100%">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block">
           <img src="../assets/img/img2.png" alt="" width="100%">
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block">
           <div class="car-introduction">
             <h4 class="detail-title">带转向灯电动折叠后视镜</h4>
             <p>具有折叠功能的后视镜，在通过狭窄路段时可以收缩起来，提高车辆通过性，在驾驶员离开车子时，也可将后视镜折叠，不仅可以保护镜面，
@@ -143,35 +181,37 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block">
           <div class="car-introduction">
             <h4 class="detail-title">无钥匙进入</h4>
             <p>采用了世界最先进的无线射频技术和最先进的车辆身份编码识别系统，当车主走进车辆时，车辆自动识别车主身份，
               车门锁会自动打开并解除防盗，为车主最大限度的提供便利和安全进入车内方式。</p>
           </div>
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block">
           <img src="../assets/img/img3.png" alt="" width="100%">
         </div>
       </div>
     </div>
-    <div class="sec-banner" id="Powerful">
+    <div class="sec-banner" id="Powerful" >
       <img src="../assets/img/motivation.png" width="100%">
-      <div class="sec-banner-title">强劲动力 Powerful</div>
-      <div class="line"></div>
       <div class="sec-banner-content">
-        搭配三菱CF4G15T的1.5T涡轮增压发动机，最大功率为150马力/5500rpm，
-        峰值扭矩为210牛·米/2000-4500rpm。8.8秒迅猛破百。搭配7速DCG智能双离合变速箱，
-        动力输出更为直接，让不甘寂静的心，得到前所未有的释放。
+        <div class="sec-banner-title">强劲动力 Powerful</div>
+        <div class="line"></div>
+        <p>
+          搭配三菱CF4G15T的1.5T涡轮增压发动机，最大功率为150马力/5500rpm，
+          峰值扭矩为210牛·米/2000-4500rpm。8.8秒迅猛破百。搭配7速DCG智能双离合变速箱，
+          动力输出更为直接，让不甘寂静的心，得到前所未有的释放。
+        </p>
       </div>
     </div>
     <div class="container car-detail" id="Interior">
       <div class="mainTitle">内饰设计 Interior</div>
       <div class="row">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block" data-move-y="30px" data-move-x="0px">
           <img src="../assets/img/img5.png" alt="" width="100%">
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block" data-move-y="100px" data-move-x="0px">
           <div class="car-introduction">
             <h4 class="detail-title">6安全气囊，安全有保障</h4>
             <p>
@@ -183,7 +223,7 @@
         </div>
       </div>
       <div class="row" style="margin-bottom: 20px">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block" data-move-y="100px" data-move-x="0px">
           <div class="car-introduction">
             <h4 class="detail-title">安卓平台 MP5+多媒体大屏带导航</h4>
             <p>
@@ -192,7 +232,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block" data-move-y="30px" data-move-x="0px">
           <img src="../assets/img/img6.png" alt="" width="100%">
         </div>
       </div>
@@ -200,7 +240,7 @@
     <div class="container car-detail" id="Driving">
       <div class="mainTitle">舒适操控 Driving</div>
       <div class="row">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block" data-move-y="100px" data-move-x="0px">
           <div class="car-introduction">
             <h4 class="detail-title">一键启动（One-Button Start）</h4>
             <p>
@@ -209,15 +249,15 @@
             </p>
           </div>
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block" data-move-y="30px" data-move-x="3px">
           <img src="../assets/img/img7.png" alt="" width="100%">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5 block" data-move-y="200px" data-move-x="-200px">
+        <div class="col-md-5 block" data-move-y="30px" data-move-x="0px">
           <img src="../assets/img/img8.png" alt="" width="100%">
         </div>
-        <div class="col-md-7 block" data-move-y="200px" data-move-x="200px">
+        <div class="col-md-7 block" data-move-y="100px" data-move-x="0px">
           <div class="car-introduction">
             <h4 class="detail-title">六速双离合自动变速器</h4>
             <p>
@@ -380,209 +420,922 @@
   </div>
   <div class=" container-fluid banner my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
     <div class="row showImg">
-        <div class="col-md-3 col-3 col-sm-3">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="contentUrl" data-size="964x1024">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-        </div>
-        <div class="col-md-3 col-3 col-sm-3">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-        </div>
-        <div class="col-md-3 col-3 col-sm-3">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="thumbnail" alt="Image description"/>
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-        </div>
-        <div class="col-md-3 col-3 col-sm-3">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
-              <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
-            </a>
-          </figure>
-        </div>
-  </div>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="contentUrl" data-size="1204x696">
+        <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="thumbnail" alt="Image description" />
+      </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="contentUrl" data-size="964x1024">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="thumbnail" alt="Image description"/>
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="contentUrl" data-size="1204x696">
+          <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+      <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
+            <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+    </div>
   </div>
 
   <!--config table-->
   <div class="container" id="ConfigTable">
-    <table class="table table-bordered">
-      <thead>
-      <tr>
-        <th scope="col" colspan="2" class="headerTitle">车型名称</th>
-        <th scope="col" class="headerTitle">2017款 1.5T DCT 网络版</th>
-        <th scope="col" class="headerTitle">2017款 2.0T 6MT 网络版</th>
-        <th scope="col" class="headerTitle">2017款 2.0T DCT 网络版</th>
-      </tr>
-      </thead>
-      <tbody>
-      <!--技术参数-->
-        <!--基本参数-->
-      <tr class="basicTr" data-fold="1" data-isOpen="isOpen"> <td colspan="5">技术参数</td></tr>
-        <tr class="fold-1">
-          <th rowspan="6" class="basicTh">基本参数</th>
-          <td>长 X 宽 X 高</td>
-          <td colspan="3">长 4719 宽1875 高1700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="1">2700</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="1">2700</td>
-          <td colspan="1">2700</td>
-          <td colspan="1">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <!--基本参数-->
-        <!--性能参数-->
-        <tr  class="fold-1">
-          <th rowspan="9" class="basicTh">基本参数</th>
-          <td>长 X 宽 X 高</td>
-          <td colspan="3">长 4719 宽1875 高1700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="1">2700</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="1">2700</td>
-          <td colspan="1">2700</td>
-          <td colspan="1">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <tr  class="fold-1">
-          <td>轴距 mm</td>
-          <td colspan="3">2700</td>
-        </tr>
-        <!--性能参数-->
+    <div class="row">
+      <div class="col-md-2 paddingR0">
+        <div class="tableTap" data-type="table-1">
+          <a href="javascript:void(0)" class="active">1.5T GDI 6AT</a>
+        </div>
+      </div>
+      <div class="col-md-2 paddingR0">
+        <div class="tableTap" data-type="table-2">
+          <a href="javascript:void(0)">1.5T GDI 6MT</a>
+        </div>
+      </div>
+      <div class="col-md-2 paddingR0">
+        <div class="tableTap" data-type="table-3">
+          <a href="javascript:void(0)">1.8T</a>
+        </div>
+      </div>
+    </div>
+    <div class="row table-1 _table" style="display: flex">
+      <div class="col-md-11">
+        <table class="table table-bordered fixed_header">
+          <thead>
+          <tr>
+            <th scope="col" colspan="2" style="width: 277px">车型名称</th>
+            <th scope="col">2017款 1.5T DCT 网络版</th>
+            <th scope="col">2017款 2.0T 6MT 网络版</th>
+            <th scope="col">2017款 2.0T DCT 网络版</th>
+          </tr>
+          <tr class="priceTr">
+            <th scope="col" colspan="2">官方指导价</th>
+            <th scope="col">126,800元</th>
+            <th scope="col">126,800元</th>
+            <th scope="col">2126,800元</th>
+          </tr>
+          </thead>
+          <tbody data-table="table-1">
+            <!--技术参数-->
+            <!--基本参数-->
+            <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
+              <td colspan="2" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-1">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-1">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+
+            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_2">
+              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-3">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-3">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--性能参数-->
 
 
-      <!--安全设备-->
-        <!--主动安全-->
-      <tr class="basicTr" data-fold="2" data-isOpen="isOpen"> <td colspan="5">安全设备</td></tr>
-      <tr class="fold-2">
-        <th rowspan="6" class="basicTh">基本参数</th>
-        <td>轴距 mm</td>
-        <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-        <td colspan="1"><i class="docIcon">-</i></td>
-        <td colspan="1"><i class="docIcon icon-select">选</i></td>
-      </tr>
-      <tr class="fold-2">
-        <td>轴距 mm</td>
-        <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-        <td colspan="1"><i class="docIcon">-</i></td>
-        <td colspan="1"><i class="docIcon icon-select">选</i></td>
-      </tr>
-      <tr class="fold-2">
-        <td>轴距 mm</td>
-        <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-        <td colspan="1"><i class="docIcon">-</i></td>
-        <td colspan="1"><i class="docIcon icon-select">选</i></td>
-      </tr>
-      <tr class="fold-2">
-        <td>轴距 mm</td>
-        <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-        <td colspan="1"><i class="docIcon">-</i></td>
-        <td colspan="1"><i class="docIcon icon-select">选</i></td>
-      </tr>
-      <tr class="fold-2">
-        <td>轴距 mm</td>
-        <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-        <td colspan="1"><i class="docIcon">-</i></td>
-        <td colspan="1"><i class="docIcon icon-select">选</i></td>
-      </tr>
-      <tr class="fold-2">
-        <td>轴距 mm</td>
-        <td colspan="1"><i class="docIcon icon-yes">标</i></td>
-        <td colspan="1"><i class="docIcon">-</i></td>
-        <td colspan="1"><i class="docIcon icon-select">选</i></td>
-      </tr>
-        <!--被动安全-->
-      <!--安全设备-->
+            <!--安全设备-->
+            <!--主动安全-->
+            <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_3">
+              <td colspan="2" class="part2">安全设备</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <!--被动安全-->
+            <!--安全设备-->
+            <tr class="basicTr" data-fold="4" data-isOpen="isOpen" data-menu="menu_4">
+              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-4">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-4">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--性能参数-->
       </tbody>
-    </table>
+        </table>
+      </div>
+      <div class="col-md-1">
+        <div class="lift-nav table-1">
+          <ul class="lift">
+            <li data-menu="menu_1">基本参数</li>
+            <li data-menu="menu_2">安全设备1</li>
+            <li data-menu="menu_3">安全设备2</li>
+            <li data-menu="menu_4">安全设备3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row table-2 _table" style="display: none">
+      <div class="col-md-11">
+        <table class="table table-bordered fixed_header">
+          <thead>
+          <tr>
+            <th scope="col" colspan="2" style="width: 277px">车型名称</th>
+            <th scope="col">2017款 1.5T DCT 网络版</th>
+            <th scope="col">2017款 2.0T 6MT 网络版</th>
+            <th scope="col">2017款 2.0T DCT 网络版</th>
+          </tr>
+          <tr class="priceTr">
+            <th scope="col" colspan="2">官方指导价</th>
+            <th scope="col">126,800元</th>
+            <th scope="col">126,800元</th>
+            <th scope="col">2126,800元</th>
+          </tr>
+          </thead>
+          <tbody data-table="table-2">
+            <!--技术参数-->
+            <!--基本参数-->
+            <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
+              <td colspan="2" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-1">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-1">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+
+            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_2">
+              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-3">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-3">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--性能参数-->
+
+
+            <!--安全设备-->
+            <!--主动安全-->
+            <tr class="basicTr" data-fold="2" data-isOpen="isOpen" data-menu="menu_3">
+              <td colspan="2" class="part2">安全设备</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <!--被动安全-->
+            <!--安全设备-->
+      </tbody>
+        </table>
+      </div>
+      <div class="col-md-1">
+        <div class="lift-nav table-2">
+          <ul class="lift">
+            <li data-menu="menu_1">基本参数</li>
+            <li data-menu="menu_2">安全设备</li>
+            <li data-menu="menu_3">安全设备</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row table-3 _table" style="display: none">
+      <div class="col-md-11">
+        <table class="table table-bordered fixed_header">
+          <thead>
+          <tr>
+            <th scope="col" colspan="2" style="width: 277px">车型名称</th>
+            <th scope="col">2017款 1.5T DCT 网络版</th>
+            <th scope="col">2017款 2.0T 6MT 网络版</th>
+            <th scope="col">2017款 2.0T DCT 网络版</th>
+          </tr>
+          <tr class="priceTr">
+            <th scope="col" colspan="2">官方指导价</th>
+            <th scope="col">126,800元</th>
+            <th scope="col">126,800元</th>
+            <th scope="col">2126,800元</th>
+          </tr>
+          </thead>
+          <tbody data-table="table-3">
+            <!--技术参数-->
+            <!--基本参数-->
+            <tr class="basicTr" data-fold="1" data-isOpen="isOpen" data-menu="menu_1">
+              <td colspan="2" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-1">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-1">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-1">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+
+            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_2">
+              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-3">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-3">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-3">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--性能参数-->
+
+
+            <!--安全设备-->
+            <!--主动安全-->
+            <tr class="basicTr" data-fold="3" data-isOpen="isOpen" data-menu="menu_3">
+              <td colspan="2" class="part2">安全设备</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <tr class="fold-2">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1"><i class="docIcon icon-yes">标</i></td>
+              <td colspan="1"><i class="docIcon">-</i></td>
+              <td colspan="1"><i class="docIcon icon-select">选</i></td>
+            </tr>
+            <!--被动安全-->
+            <!--安全设备-->
+
+            <tr class="basicTr" data-fold="4" data-isOpen="isOpen" data-menu="menu_4">
+              <td colspan="2" class="part1" style="width: 277px">技术参数</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr class="fold-4">
+              <td colspan="2">长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--基本参数-->
+            <!--性能参数-->
+            <tr  class="fold-4">
+              <td colspan="2"> 长 X 宽 X 高</td>
+              <td colspan="3">长 4719 宽1875 高1700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+              <td colspan="1">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <tr  class="fold-4">
+              <td colspan="2">轴距 mm</td>
+              <td colspan="3">2700</td>
+            </tr>
+            <!--性能参数-->
+      </tbody>
+        </table>
+      </div>
+      <div class="col-md-1">
+        <div class="lift-nav table-3">
+          <ul class="lift">
+            <li data-menu="menu_1">基本参数</li>
+            <li data-menu="menu_2">安全设备1</li>
+            <li data-menu="menu_3">安全设备2</li>
+            <li data-menu="menu_4">安全设备3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--tips-->
+    <div class="row">
+      <div class="col-md-12">
+        <p class="configTips">
+          备注：随着产品发展和变化，长安汽车具有随时改进型号、技术参数和配置、
+          选装件的权利，如有更改，请以官方公布的最新车型配置表为准，详情请咨询当地经销商。
+        </p>
+      </div>
+    </div>
   </div>
 
   <!--config table-->
@@ -772,5 +1525,33 @@
   <script src="../JS/photoswipe.min.js"></script>
   <script src="../JS/rem.js"></script>
   <script src="../JS/common.js"></script>
+  <script type="text/javascript">
+
+    // table事件
+
+    $(document).ready(function(){
+      $('.block').smoove({offset:'20%'});
+      var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+       if (htmlWidth < 768) {
+         $('.autoChange').each(function () {
+           var url = $(this).attr('data-image-url');
+           $(this).css('background-image', 'url('+ url + ')');
+         });
+       }
+
+
+    });
+    $(".targetGo").delegate('a', 'click', function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var $target = $(this.hash);
+        $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+        if ($target.length) {
+          var targetOffset = $target.offset().top;
+          $('html,body').animate({scrollTop: targetOffset},800);
+          return false;
+        }
+      }
+    });
+  </script>
 </body>
 </html>

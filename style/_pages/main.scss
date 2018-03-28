@@ -68,6 +68,26 @@
   max-width: 20%;
   flex: initial;
 }
+.arrow-left {
+  background: url(../assets/img/arrows.png) no-repeat left top;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 999;
+}
+.arrow-right {
+  background: url(../assets/img/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 999;
+}
 @media (max-width: 768px) {
   ._col-2 {
     padding: rem(0) rem(7);

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/jquery.fullPage.css">
   <link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
 
   <!-- 调用兼容ie9以下js -->
@@ -121,43 +122,52 @@
         </li>
       </ul>
     </header>
-    <div class="carsBanner paddingT-54">
-      <p class="carType">CS10</p>
-      <p class="typeDes">随心所“驭”，自由驰骋</p>
-      <div class="carImages">
-        <img src="../assets/img/index-cs10.png">
-        <div class="bannerBtn">
-          <a class="_btn">查看详情</a>
-          <a class="_btn">预约试驾</a>
+    <div id="indexFull" class="paddingT-54">
+      <div class="section">
+        <div class="carsBanner">
+          <p class="carType">CS10</p>
+          <p class="typeDes">随心所“驭”，自由驰骋</p>
+          <div class="bannerBtn">
+            <a class="_btn">查看详情</a>
+            <a class="_btn">预约试驾</a>
+          </div>
+          <div class="carImages">
+            <img src="../assets/img/index-cs10.png">
+            <div class="pullTips"><span class="oi oi-chevron-bottom"></span></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carsBanner">
-      <p class="carType">CS9</p>
-      <p class="typeDes">卓越公路性能与越野性能的结合</p>
-      <div class="carImages">
-        <img src="../assets/img/index-cs9.png">
-        <div class="bannerBtn">
-          <a class="_btn">查看详情</a>
-          <a class="_btn">预约试驾</a>
+      <div class="section">
+        <div class="carsBanner">
+          <p class="carType">CS9</p>
+          <p class="typeDes">卓越公路性能与越野性能的结合</p>
+          <div class="bannerBtn">
+            <a class="_btn">查看详情</a>
+            <a class="_btn">预约试驾</a>
+          </div>
+          <div class="carImages">
+            <img src="../assets/img/index-cs9.png">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carsBanner">
-      <p class="carType">CT7</p>
-      <p class="typeDes">纵享动感操控与舒适驾乘</p>
-      <div class="carImages">
-        <img src="../assets/img/index-crt9.png">
-        <div class="bannerBtn">
-          <a class="_btn">查看详情</a>
-          <a class="_btn">预约试驾</a>
+      <div class="section">
+        <div class="carsBanner">
+          <p class="carType">CT7</p>
+          <p class="typeDes">纵享动感操控与舒适驾乘</p>
+          <div class="bannerBtn">
+            <a class="_btn">查看详情</a>
+            <a class="_btn">预约试驾</a>
+          </div>
+          <div class="carImages">
+            <img src="../assets/img/index-crt9.png">
+          </div>
+        </div>
+        <div class="mobile-footer">
+          <img src="../assets/img/btnLogo.png" width="224">
+          <div class="rights">@ 2018 Leopaard All Rights Reserved
+            湘ICP备13007785号</div>
         </div>
       </div>
-    </div>
-    <div class="mobile-footer">
-      <img src="../assets/img/btnLogo.png" width="224">
-      <div class="rights">@ 2018 Leopaard All Rights Reserved
-        湘ICP备13007785号</div>
     </div>
   </div>
 
@@ -166,6 +176,11 @@
   <script src="../JS/main.js"></script>
   <script src="../JS/rem.js"></script>
   <script src="../JS/common.js"></script>
-
+  <script src="../JS/jquery.fullPage.min.js"></script>
+  <script>
+    $(function(){
+      $('#indexFull').fullpage();
+    });
+  </script>
 </body>
 </html>

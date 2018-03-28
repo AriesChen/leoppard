@@ -1,23 +1,102 @@
 .table {
+  position: relative;
   .basicTr {
-    background: #e9ecef;
-    text-align: left;
-    font-size: rem(22);
+    background: #414141;
+    text-align: center;
+    color: #ffffff;
     cursor: pointer;
     td {
       border-bottom: 1px solid #dbdbdb;
     }
   }
+  thead {
+    display: block;
+    //position: absolute;
+    //top: 0;
+  }
+  th {
+    text-align: center;
+  }
+  .priceTr {
+   background: #f6ebc7;
+    text-align: center;
+  }
   tr {
     display: table-row;
     text-align: center;
   }
-  .headerTitle {
-    text-align: center;
-    padding: rem(40) 0;
+  td {
+    width: 25%;
+    padding: rem(15) 0;
   }
   .basicTh {
     text-align: center;
     vertical-align: middle;
+  }
+  tbody {
+    height: rem(600);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+  }
+}
+.lift-nav {
+  .lift {
+    li {
+      cursor: pointer;
+      padding: rem(20) 0;
+      color: #dddddd;
+      text-align: center;
+      border-bottom: 1px solid #dddddd;
+    }
+    .active {
+      color: #04BCF6;
+    }
+  }
+}
+.fixed_header {
+  th {
+    width: 25%;
+  }
+}
+.tableTap {
+  margin-bottom: rem(20);
+  a {
+    cursor: pointer;
+    background: #ffffff;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000000;
+    color: #000;
+    padding: rem(10);
+    &:hover {
+      text-decoration: none;
+      color: #04BCF6;
+    }
+  }
+  .active {
+    background: #000;
+    color: #fff !important;
+  }
+}
+.paddingR0 {
+  padding-right: 0 !important;
+}
+.configTips {
+  font-size: rem(13);
+  color: #888888;
+  padding-top: rem(10);
+  line-height: 1.5;
+  margin-bottom: rem(60);
+}
+#ConfigTable {
+  margin-top: rem(100);
+}
+@media (max-width: 768px) {
+  .paddingR0 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 }

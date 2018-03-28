@@ -110,10 +110,10 @@
   position: absolute; }
 
 .pswp__button--arrow--left {
-  left: 0; }
+  left: 100px; }
 
 .pswp__button--arrow--right {
-  right: 0; }
+  right: 100px; }
 
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {

@@ -289,3 +289,50 @@ $('#ConfigTable').delegate('.basicTr', 'click', function () {
     $(this).attr('data-isOpen', 'isOpen');
   }
 });
+function removeTabActive () {
+  $('.tableTap').each(function(){
+    $(this).children().removeClass('active');
+  });
+  $('._table').each(function () {
+    $(this).css('display', 'none');
+  });
+}
+$('#ConfigTable').delegate('.tableTap', 'click', function () {
+  removeTabActive();
+  var tableName = $(this).attr('data-type');
+  $(this).children().addClass('active');
+  $('.'+tableName).css('display', 'flex');
+  addEvent(tableName);
+});
+
+function addEvent(table) {
+  var tbodyEl = $("tbody[data-table='" + table + "']");
+  $('.' + table).find('.lift li').click(function () {
+    $(this).siblings().removeClass('active');
+    var targetTr = $(this).attr('data-menu');
+    var posHeight = tbodyEl.find("tr[data-menu='" + targetTr + "']").position().top;
+    var scrollHeight = tbodyEl.scrollTop();
+    tbodyEl.animate({scrollTop: posHeight + scrollHeight  -87}, 500);
+  });
+}
+var tbodyHeight = 0;
+$("tbody").scroll(function () {
+  var tableTarget = $(this).attr('data-table');
+  var height = $(this).height();
+  tbodyHeight = height;
+  var currentTrHeight;
+  $('.basicTr').each(function(){;
+    currentTrHeight = parseInt($(this).position().top);
+    var offSetParent = currentTrHeight + height;
+    var dataMenu = $(this).attr('data-menu');
+    if ((offSetParent < 0 && offSetParent > -5) || (currentTrHeight > 0 && currentTrHeight < 100)){
+      $('.'+ tableTarget).find('.lift li').removeClass('active');
+      $('.'+ tableTarget).find('.lift li').each(function () {
+        if ($(this).attr('data-menu') == dataMenu) {
+          $(this).addClass('active');
+        }
+      });
+    }
+  })
+});
+addEvent('table-1');

@@ -318,13 +318,27 @@ ol, ul {
     }
   }
 }
+.pullTips {
+  position: absolute;
+  bottom: rem(10);
+  left: 50%;
+  span {
+    font-size: rem(16);
+    color: #ffffff;
+  }
+}
 @media (max-width: 768px) {
+  .rightMenu {
+    display: none;
+  }
   .carsBanner {
     width: 100%;
+    position: relative;
     text-align: center;
+    height: 100vh;
     .carType {
       font-family: DINPro-Medium;
-      margin-top: rem(66);
+      padding-top: rem(135);
       font-size: rem(24);
       color: #404040;
       letter-spacing: 0.23px;
@@ -337,37 +351,34 @@ ol, ul {
       letter-spacing: 0.15px;
     }
     .carImages {
-      margin-top: rem(35);
+      line-height: 0;
+      bottom: 0;
       height: auto;
-      position: relative;
+      position: absolute;
       img {
         background-size: cover;
         width: 100%;
       }
-      .bannerBtn {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        ._btn {
-          border: rem(1) solid  #888888;
-          font-size: rem(14);
-          border-radius:rem(100);
-          -o-border-radius: rem(100);
-          -moz-border-radius: rem(100);
-          -ms-border-radius: rem(100);
-          color: #888888;;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          padding: rem(9) rem(25);
-          display: inline-block;
-          margin-left: rem(15);
-        }
-        ._btn:nth-child(2) {
-          color: #04BCF6;
-          border-color: #04BCF6;;
-        }
+    }
+    .bannerBtn {
+      margin: rem(30) 0;
+      ._btn {
+        border: rem(1) solid  #888888;
+        font-size: rem(14);
+        border-radius:rem(100);
+        -o-border-radius: rem(100);
+        -moz-border-radius: rem(100);
+        -ms-border-radius: rem(100);
+        color: #888888;;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: rem(9) rem(25);
+        display: inline-block;
+        margin-left: rem(15);
+      }
+      ._btn:nth-child(2) {
+        color: #04BCF6;
+        border-color: #04BCF6;;
       }
     }
   }
