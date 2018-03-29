@@ -7,6 +7,7 @@
     cursor: pointer;
     td {
       border-bottom: 1px solid #dbdbdb;
+      width: rem(277);
     }
   }
   thead {
@@ -47,7 +48,8 @@
     li {
       cursor: pointer;
       padding: rem(20) 0;
-      color: #dddddd;
+      color: #6e6e6e;
+      font-size: rem(14);
       text-align: center;
       border-bottom: 1px solid #dddddd;
     }
@@ -88,7 +90,7 @@
   margin-bottom: rem(60);
 }
 #ConfigTable {
-  margin-top: rem(100);
+  //padding-top: rem(80);
 }
 .tableCol_9 {
   td {
@@ -124,18 +126,26 @@
 }
 .tableCol_5 {
   td {
-    width: 20%;
+    width: 21%;
   }
   th {
-    width: 20%;
+    width: 21%;
   }
 }
 .tableCol_3 {
   td {
-    width: 33.333%;
+    width: 26.333%;
   }
   th {
-    width: 33.333%;
+    width: 18.33%;
+  }
+}
+.tableCol_2 {
+  td {
+    width: 5%;
+  }
+  th {
+    width: 15%;
   }
 }
 @media (max-width: 768px) {

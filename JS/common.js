@@ -283,10 +283,10 @@ $('#ConfigTable').delegate('.basicTr', 'click', function () {
   var _idx = $(this).attr('data-fold');
   var status = $(this).attr('data-isOpen');
   if (status === 'isOpen') {
-    $('.fold-' + _idx).slideUp();
+    $('.fold-' + _idx).hide();
     $(this).attr('data-isOpen', 'close');
   } else {
-    $('.fold-' + _idx).slideDown();
+    $('.fold-' + _idx).show();
     $(this).attr('data-isOpen', 'isOpen');
   }
 });

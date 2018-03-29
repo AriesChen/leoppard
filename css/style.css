@@ -592,7 +592,7 @@ ol, ul {
 }
 
 .sec-banner .sec-banner-content .line {
-  margin-top: 1.25rem;
+  margin-top: 0.625rem;
   border-bottom: 2px solid #04BCF6;
   width: 2.5rem;
 }
@@ -1600,6 +1600,7 @@ ol, ul {
 
 .table .basicTr td {
   border-bottom: 1px solid #dbdbdb;
+  width: 17.3125rem;
 }
 
 .table thead {
@@ -1642,7 +1643,8 @@ ol, ul {
 .lift-nav .lift li {
   cursor: pointer;
   padding: 1.25rem 0;
-  color: #dddddd;
+  color: #6e6e6e;
+  font-size: 0.875rem;
   text-align: center;
   border-bottom: 1px solid #dddddd;
 }
@@ -1688,10 +1690,6 @@ ol, ul {
   margin-bottom: 3.75rem;
 }
 
-#ConfigTable {
-  margin-top: 6.25rem;
-}
-
 .tableCol_9 td {
   width: 11.11%;
 }
@@ -1725,19 +1723,27 @@ ol, ul {
 }
 
 .tableCol_5 td {
-  width: 20%;
+  width: 21%;
 }
 
 .tableCol_5 th {
-  width: 20%;
+  width: 21%;
 }
 
 .tableCol_3 td {
-  width: 33.333%;
+  width: 26.333%;
 }
 
 .tableCol_3 th {
-  width: 33.333%;
+  width: 18.33%;
+}
+
+.tableCol_2 td {
+  width: 5%;
+}
+
+.tableCol_2 th {
+  width: 15%;
 }
 
 @media (max-width: 768px) {
