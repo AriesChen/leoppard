@@ -309,11 +309,12 @@ $('#ConfigTable').delegate('.tableTap', 'click', function () {
 function addEvent(table) {
   var tbodyEl = $("tbody[data-table='" + table + "']");
   $('.' + table).find('.lift li').click(function () {
-    $(this).siblings().removeClass('active');
+    var theadHeight = $('.' + table).find('thead').height();
+    $(this).addClass('active').siblings().removeClass('active');
     var targetTr = $(this).attr('data-menu');
     var posHeight = tbodyEl.find("tr[data-menu='" + targetTr + "']").position().top;
     var scrollHeight = tbodyEl.scrollTop();
-    tbodyEl.animate({scrollTop: posHeight + scrollHeight  -87}, 500);
+    tbodyEl.animate({scrollTop: posHeight + scrollHeight  - theadHeight}, 500);
   });
 }
 var tbodyHeight = 0;
@@ -326,7 +327,7 @@ $("tbody").scroll(function () {
     currentTrHeight = parseInt($(this).position().top);
     var offSetParent = currentTrHeight + height;
     var dataMenu = $(this).attr('data-menu');
-    if ((offSetParent < 0 && offSetParent > -5) || (currentTrHeight > 0 && currentTrHeight < 100)){
+    if ((offSetParent < 0 && offSetParent > -5) || (currentTrHeight > 0 && currentTrHeight < 150)){
       $('.'+ tableTarget).find('.lift li').removeClass('active');
       $('.'+ tableTarget).find('.lift li').each(function () {
         if ($(this).attr('data-menu') == dataMenu) {
