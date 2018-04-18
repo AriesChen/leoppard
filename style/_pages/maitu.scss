@@ -1,0 +1,213 @@
+.maitu {
+  padding-left: 0;
+}
+.maitu-arrow-left {
+  background: url(../assets/img/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 16%;
+  top: 45%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 999;
+}
+.maitu-arrow-right {
+  background: url(../assets/img/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 16%;
+  top: 45%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 999;
+}
+.maitu-banner1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  line-height: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.maitu-logoText {
+  //font-family: PingFangHK-Medium;
+  font-size: rem(36);
+  color: #ffffff;
+  line-height: rem(50);
+}
+.maitu-banner-title {
+  padding-top: rem(200);
+  font-size: rem(48);
+  color: #FFFFFF;
+  position: relative;
+  line-height: 2;
+  &:after {
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid #04BCF6;
+    width: rem(90);
+    top: rem(300);
+    left: 0;
+    margin:auto;
+  }
+}
+.maitu-siwperBox {
+  margin-top: rem(180);
+  padding-bottom: rem(40);
+  position: relative;
+}
+.maitu-banner-text {
+  width: 70%;
+  margin-top: rem(30);
+  font-size: rem(24);
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+.maitu-row {
+  padding-bottom: rem(30);
+}
+.maitu-slogen {
+  float: left;
+  font-size: rem(18);
+  color: #ffffff;
+  line-height: rem(30);
+}
+.maitu-power {
+  padding: rem(300) 0;
+}
+.maitu-power-title {
+  font-size: rem(48);
+  color: #FFFFFF;
+  letter-spacing: 0.19px;
+  line-height: 1;
+}
+.maitu-power-text {
+  font-size: rem(20);
+  color: #ffffff;
+  letter-spacing: 0.19px;
+  line-height: rem(67);
+}
+.matiu-sildeFlex {
+  display: flex;
+  .slideFlex {
+    flex: 1;
+    margin-right: rem(20);
+  }
+}
+.maitu-center-title {
+  text-align: center;
+  font-size: rem(48);
+  color: #FFFFFF;
+  letter-spacing: 0.46px;
+  line-height: 1;
+  padding-top: rem(100);
+  &:after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #04BCF6;
+    width: rem(50);
+    top: rem(180);
+    right: 0;
+    left: 0;
+    margin:auto;
+  }
+}
+.maitu-table-tips {
+  line-height: 1.5;
+  margin-top: rem(20);
+  font-size: rem(14);
+  padding-bottom: rem(100);
+  color: #888888;
+}
+.maitu-table {
+  background: rgba(216,216,216,0.00);
+  border: 1px solid #545454;
+  margin-top: rem(100);
+  tbody {
+    height: auto !important;
+    span {
+      display: block;
+    }
+    .label {
+      float: left;
+    }
+    .value {
+      float: right;
+    }
+  }
+  tr {
+    display: flex;
+  }
+  th {
+    width: 100%;
+    font-size: rem(18);
+    line-height: 1.5;
+    color: #ffffff;
+    border-top: 1px solid #545454;
+  }
+}
+.maitu-banner-footer {
+  width: 100%;
+  height: rem(120);
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  opacity: 0.83;
+  background: #111214;
+  font-size: rem(14);
+  color: rgba(255,255,255,0.80);
+  letter-spacing: 0.27px;
+  text-align: center;
+  .container ul{
+    display: flex;
+    li {
+      padding: rem(20) 0;
+      list-style: none;
+      a {
+        color: #ffffff;
+        display: inline-block;
+        height: rem(60);
+        line-height: rem(60);
+        padding: 0 rem(30);
+      }
+      &:hover {
+        background: #0f497b;
+        color: #ffffff;
+      }
+      a:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      ._btn {
+        border: rem(1) solid #ffffff;
+        font-size: rem(18);
+        border-radius:rem(100);
+        -o-border-radius: rem(100);
+        -moz-border-radius: rem(100);
+        -ms-border-radius: rem(100);
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        height: rem(40);
+        line-height: rem(36);
+        display: inline-block;
+        margin-left: rem(15);
+      }
+      ._btn:nth-child(2) {
+        color: #ffffff;
+        background: #04BCF6;
+        border-color: #04BCF6;
+      }
+    }
+    li:last-child {
+      &:hover {
+        background: none;
+      }
+      cursor: pointer;
+      text-align: right;
+      flex: 2;
+      margin-top: rem(20);
+    }
+  }
+}

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <!-- 优先使用最新版本的ie和chrome内核 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>LEOPAARD</title>
+
+  <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+        <!--integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="../css/default-skin.css">
+  <link rel="stylesheet" href="../css/photoswipe.css">
+  <link rel="stylesheet" href="../css/idangerous.swiper.css">
+
+  <!-- 调用兼容ie9以下js -->
+  <!--[if lt IE 9]>
+  <script src="../JS/respond.min.js"></script>
+  <script src="../JS/html5.min.js"></script>
+  <![endif]-->
+</head>
+<body style="background: #000000">
+<!-- for pc right menu-->
+  <div class="rightMenu">
+    <div class="menuMask"></div>
+    <div class="menu">
+      <ol>
+        <li><a href="javascript:void(0)"><span class="oi oi-x"></span></a></li>
+        <li><a href="carDetail.html">CS10</a></li>
+        <li><a href="index.html">CS9</a></li>
+        <li><a href="carDetail.html">CRT7</a></li>
+        <li><a href="maitu.html">迈途</a></li>
+        <li><a href="news.html">新闻中心</a></li>
+        <li><a href="orderDrving.html">预约试驾</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="repair.html">维修平台中心</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <header class="header-content pc-header">
+    <div class="logo">
+      <img src="../assets/img/logo.png" width="170" alt="">
+    </div>
+    <ul>
+      <li><a href="">CS9</a></li>
+      <li class="active"><a href="carDetail.html">CS10</a></li>
+      <li><a href="index.html">CT7</a></li>
+      <li><a href="maitu.html">迈途</a></li>
+      <li><a href="orderDrving.html">预约试驾</a></li>
+    </ul>
+    <div class="menuIcon">
+      <span class="icon-line line_top"></span>
+      <span class="icon-line line_md"></span>
+      <span class="icon-line line_bottom"></span>
+    </div>
+  </header>
+  <header class="header-content mobile-header">
+    <ul>
+      <li><img src="../assets/img/logo.png" alt="" width="90"></li>
+      <li>CS10</li>
+      <li style="text-align: right;flex: 3">
+        <div class="mobileMenuIcon">
+          <span class="icon-line line_top"></span>
+          <span class="icon-line line_md"></span>
+          <span class="icon-line line_bottom"></span>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <div class="maitu-banner1" id="section1" style="background-image: url('../assets/img/maitu/banner.png')">
+  </div>
+
+  <div class="maitu-banner1" id="section2"
+       style="background-image: url('../assets/img/maitu/car.png');height: 100%">
+    <div class="container maitu">
+      <div class="maitu-banner-title">全新迈途</div>
+      <div class="maitu-banner-text">
+        迈途为全方位的超凡驾驭体验而生，每一处细节都力臻完美。创新的技术、先进的机械工艺，与强悍的发动机设计经过匠心融合，
+        成就无与伦比的SUV座驾，从容征服一切路途。
+      </div>
+    </div>
+    <div class="maitu-siwperBox">
+      <a class="maitu-arrow-left" href="#"></a>
+      <a class="maitu-arrow-right" href="#"></a>
+      <div class="swiper-container container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+              <div class="row showImg">
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="contentUrl" data-size="964x1024">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="thumbnail" alt="Image description"/>
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+              <div class="row showImg">
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5%20InteriorDetail_Nomi.JPG?itok=rFtKRsPF" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8399-.jpg?itok=eRXp6Hgm" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="contentUrl" data-size="964x1024">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/7%20ExteriorDetail_FlushHandle.JPG?itok=bvpQYyBt" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/5W1A8676-.jpg?itok=Idow3vPp" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_double_square_desktop_1x/public/gallery/es8-sofa.JPG?itok=HKHbSyR6" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/8%20ExteriorDetail_Symbol.JPG?itok=I6_yUh8a" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/3%20ExteriorDetail_Rear.JPG?itok=whw220X5" itemprop="thumbnail" alt="Image description"/>
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8495-.jpg?itok=De6AN87_" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/5W1A8541-.jpg?itok=pwHkw0vD" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/6%20ExteriorDetail_Taillight.JPG?itok=8LQUNC57" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+                <figure class="col-md-3 col-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="contentUrl" data-size="1204x696">
+                    <img src="https://www.nio.com/prod/s3fs-public/styles/tile_rectangle_desktop_1x/public/gallery/2%20ExteriorDetail_Waterline.JPG?itok=ueRhOCH4" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="maitu-banner1" id="section3"
+       style="background-image: url('../assets/img/maitu/car1.png');height: 100%">
+    <div class="container maitu">
+      <div class="maitu-banner-title">匠心雕琢，精益求精</div>
+      <div class="maitu-banner-text" style="padding: 97px 0 127px 0">
+        迈途强大自信来自于匠心设计，犹如浑然天成之作。精心雕琢的线条，宛如大自然的鬼斧神工。
+        车身大量采用超轻材料：全系标配碳纤维传动轴 ，发动机和悬架由铝材打造；搭配出色的引擎性能，
+        实现无可比拟的功率重量比，显著提高行驶效率，释放出源源不断的强悍动力，带来震撼人心的驾驭快感。
+      </div>
+    </div>
+  </div>
+  <div class="maitu-banner1" id="section4"
+       style="background-image: url('../assets/img/maitu/car2.png');height: 100%">
+    <div class="container maitu-power">
+      <div class="row maitu-row">
+        <div class="col-md-9">
+          <div class="maitu-power-title">190</div>
+          <div class="maitu-power-text">马力</div>
+        </div>
+        <div class="col-md-3">
+          <div class="maitu-power-title">400Nm</div>
+          <div class="maitu-power-text">扭矩</div>
+        </div>
+      </div>
+      <div class="row maitu-row">
+        <div class="col-md-9">
+          <div class="maitu-power-title">2.0L</div>
+          <div class="maitu-power-text">中冷涡轮增压发动机</div>
+        </div>
+        <div class="col-md-3">
+          <div class="maitu-power-title">7秒</div>
+          <div class="maitu-power-text">0-100公里/小时加速</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="maitu-banner1" id="section5"
+       style="background-image: url('../assets/img/maitu/bg.png'); height: 100%">
+    <div class="maitu-center-title">技术数据</div>
+    <div class="container">
+      <table class="table maitu-table">
+        <tbody>
+          <tr>
+            <th scope="row" style="border-top: none;">
+              <span class="label">最大功率（kW）</span>
+              <span class="value">184 kW</span>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="label">最大功率（hp）</span>
+              <span class="value">250 hp</span>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="label">最大功率对应发动机转速</span>
+              <span class="value">6,500 rpm</span>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="label">0 - 100 km/h 加速时间</span>
+              <span class="value">5.6 s</span>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="label">最高车速</span>
+              <span class="value">260 km/h</span>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="label">制造商建议零售价（含增值税）</span>
+              <span class="value">588,000 元起 *</span>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="label">最大功率（kW）</span>
+              <span class="value">184 kW</span>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+      <div class="maitu-table-tips">
+        *  所列的制造商建议零售价（含增值税）仅供参考，并不包括运输费用、税费（另有明确规定的除外）、
+        牌照、所有权、非强制或地区性要求的设备。特别是，制造商建议零售价（含增值税）并未包含 2016 年
+        12 月 1 日起生效的《财政部、国家税务总局关于对超豪华小汽车加征消费税有关事项的通知》所要求加征的消费税。
+        请向授权经销商咨询具体的价格信息。
+      </div>
+    </div>
+  </div>
+
+  <div class="maitu-banner1" id="section6" style="height: 100%">
+    <div class="maitu-center-title">热点新闻</div>
+    <div class="maitu-siwperBox">
+      <a class="maitu-arrow-left maitu-arrow-left2" href="#"></a>
+      <a class="maitu-arrow-right maitu-arrow-left2" href="#"></a>
+      <div class="swiper-container2 container" style="overflow: hidden">
+        <div class="swiper-wrapper hotNews" style="background: #000000">
+          <div class="swiper-slide">
+            <div class="matiu-sildeFlex">
+              <div class="slideFlex">
+                <img src="../assets/img/carlight.png" alt="热点新闻" width="100%">
+                <p class="newsTime">2017年6月8日</p>
+                <p class="hotTitle"><a href="">猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告</a></p>
+                <p class="hotDes">
+                  猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告
+                  湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设…
+                </p>
+              </div>
+              <div class="slideFlex">
+                <img src="../assets/img/carlight.png" alt="热点新闻" width="100%">
+                <p class="newsTime">2017年6月8日</p>
+                <p class="hotTitle">
+                  <a href="">湖南猎豹汽车股份有限公司长沙分公司物流中心固定式液压升降平台采购安装工程（重新采购）</a></p>
+                <p class="hotDes">
+                  猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告
+                  湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设…
+                </p>
+              </div>
+              <div class="slideFlex">
+                <img src="../assets/img/carlight.png" alt="热点新闻" width="100%">
+                <p class="newsTime">2018年6月8日</p>
+                <p class="hotTitle">
+                  <a href="">湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设备改造项目招标公告</a></p>
+                <p class="hotDes">
+                  猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告
+                  湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设…
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="matiu-sildeFlex">
+              <div class="slideFlex">
+                <img src="../assets/img/carlight.png" alt="热点新闻" width="100%">
+                <p class="newsTime">2017年6月8日</p>
+                <p class="hotTitle"><a href="">猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告</a></p>
+                <p class="hotDes">
+                  猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告
+                  湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设…
+                </p>
+              </div>
+              <div class="slideFlex">
+                <img src="../assets/img/carlight.png" alt="热点新闻" width="100%">
+                <p class="newsTime">2017年6月8日</p>
+                <p class="hotTitle">
+                  <a href="">湖南猎豹汽车股份有限公司长沙分公司物流中心固定式液压升降平台采购安装工程（重新采购）</a></p>
+                <p class="hotDes">
+                  猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告
+                  湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设…
+                </p>
+              </div>
+              <div class="slideFlex">
+                <img src="../assets/img/carlight.png" alt="热点新闻" width="100%">
+                <p class="newsTime">2018年6月8日</p>
+                <p class="hotTitle">
+                  <a href="">湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设备改造项目招标公告</a></p>
+                <p class="hotDes">
+                  猎豹汽车长沙分公司CS3EV车身涂装机械化设备改造项目补充公告
+                  湖南猎豹汽车股份有限公司长沙分公司CS3EV车身涂装机械化设…
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="maitu-banner-footer">
+    <div class="container">
+      <ul class="targetGo">
+        <li>
+          <img src="../assets/img/maitu/logo.png" width="198" />
+          <span class="maitu-logoText">
+            &nbsp;&nbsp;<span class="oi oi-media-record" style="font-size: 12px"></span>&nbsp;&nbsp;迈途
+          </span><br>
+          <span class="maitu-slogen">与众不同的SUV</span>
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#orderDriver" class="_btn">在线订车</a>
+          <a data-toggle="modal" data-target="#orderDriver" class="_btn">预约试驾</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-banner-footer">
+    <a data-toggle="modal" data-target="#orderDriver" class="_btn">在线订车</a>
+    <a data-toggle="modal" data-target="#orderDriver" class="_btn">预约试驾</a>
+  </div>
+
+  <!--pc端-->
+  <div class="ps-DesStyle">
+  </div>
+  <!--pc端-->
+
+  <!--移动端-->
+  <div class="mobile-styles">
+    <div class="mobileMenu">
+      <div class="MenuHeader">
+        <img src="../assets/img/logo.png" alt="" width="90">
+        <span class="oi oi-x mobileX"></span>
+      </div>
+      <ul>
+        <li><a href="carDetail.html">CS10</a></li>
+        <li><a href="index.html">CS9</a></li>
+        <li><a href="index.html">CTR7</a></li>
+        <li><a href="news.html">新闻中心</a></li>
+        <li><a href="orderDrving.html">预约试驾</a></li>
+        <li><a href="repair.html">维修平台中心</a></li>
+        <li><a href="">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-DesStyle">
+  </div>
+  <!--移动端-->
+
+
+  <!--config table-->
+
+  <div class="container-fluid foot-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-footer">
+          <p><img src="../assets/img/footerlogo.png" width="276px"></p>
+          <p>@ 2018 Leopaard All Rights Reserved    湘ICP备13007785号</p>
+          <p><a href="#">招聘贤才</a>  -  <a href="#">关于我们</a>  -  <a href="#">联系我们</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modals-->
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="orderDriver" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content container">
+        <div class="formBody">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 35px">&times;</span>
+          </button>
+          <div class="formTitle">预约试驾</div>
+          <p class="titleDesc">如果您对试驾某款Leopaard车型感兴趣，请留下联络信息，我们将在短时间内联系您。</p>
+
+          <p class="formSubTitle">选择车型</p>
+          <div class="row">
+            <div class="carStage">
+              <img src="../assets/img/car-ct7.png" name="ctr7" style="display: inline-block">
+              <img src="../assets/img/car-cs9.png" name="cs9">
+              <img src="../assets/img/car-cs10.png" name="cs10">
+              <img src="../assets/img/car-ct7.png" name="q6">
+              <img src="../assets/img/car-cs10.png" name="cs9ev">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 _col-2">
+              <div class="carbox active">
+                <p class="carName" type="cs9">CS9</p>
+              </div>
+            </div>
+            <div class="col-md-2 _col-2">
+              <div class="carbox">
+                <p class="carName" type="cs9ev">CS9ev</p>
+              </div>
+            </div>
+            <div class="col-md-2 _col-2">
+              <div class="carbox">
+                <p class="carName" type="cs10">CS10</p>
+              </div>
+            </div>
+            <div class="col-md-2 _col-2">
+              <div class="carbox">
+                <p class="carName" type="q6">Q6</p>
+              </div>
+            </div>
+            <div class="col-md-2 _col-2">
+              <div class="carbox">
+                <p class="carName" type="ctr7">CTR9</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="formSubTitle">经销商信息</p>
+          <div class="row">
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>选择省 *</option>
+                <option>湖南</option>
+                <option>湖北</option>
+                <option>广东</option>
+                <option>广西</option>
+                <option>河北</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>选择市 *</option>
+                <option>长沙</option>
+                <option>常德</option>
+                <option>株洲</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>选择经销商 *</option>
+                <option>麓谷</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="formSubTitle">试驾者信息</p>
+          <div class="row form-input-height">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="姓名 *">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="性别 *">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="手机 *">
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="" disabled selected>您预计多久以后换车？ *</option>
+                <option>1年</option>
+                <option>2年</option>
+                <option>3个月</option>
+              </select>
+            </div>
+          </div>
+          <p class="tips">
+            * 我们会在您的资料提交后的24小时内与您取得联系。未经您的许可，您的资料不会透露给任何第三方。<br>
+            * 试驾请携带驾照，试驾者须满一年驾龄。
+          </p>
+          <div class="btns">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">确认提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+      <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <!--  Controls are self-explanatory. Order can be changed. -->
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- scripts-->
+  <script src="../JS/jquery-1.10.1.min.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <script src="../JS/photoswipe-ui-default.min.js"></script>
+  <script src="../JS/photoswipe.min.js"></script>
+  <script src="../JS/idangerous.swiper.min.js"></script>
+  <script src="../JS/rem.js"></script>
+  <script src="../JS/common.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      mySwiper = new Swiper('.swiper-container',{
+        autoplay : 5000,//可选选项，自动滑动
+        loop : true,//可选选项，开启循环
+        slidesPerView: 1,
+        visibilityFullFit : true,
+        resizeReInit : true,
+        calculateHeight : true
+      });
+      mySwiper2 = new Swiper('.swiper-container2',{
+        autoplay : 5000,//可选选项，自动滑动
+        loop : true,//可选选项，开启循环
+        slidesPerView: 1,
+        visibilityFullFit : true,
+        resizeReInit : true,
+        calculateHeight : true
+      });
+      var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+        // parse slide data (url, title, size ...) from DOM elements
+        // (children of gallerySelector)
+        var parseThumbnailElements = function(el) {
+          var thumbElements = el.childNodes,
+            numNodes = thumbElements.length,
+            items = [],
+            figureEl,
+            linkEl,
+            size,
+            item;
+
+          for(var i = 0; i < numNodes; i++) {
+
+            figureEl = thumbElements[i]; // <figure> element
+
+            // include only element nodes
+            if(figureEl.nodeType !== 1) {
+              continue;
+            }
+
+            linkEl = figureEl.children[0]; // <a> element
+
+            if(linkEl.getAttribute('data-size')) {
+              size = linkEl.getAttribute('data-size').split('x');
+            }
+
+            // create slide object
+            item = {
+              src: linkEl.getAttribute('href'),
+              w: parseInt(size[0], 10),
+              h: parseInt(size[1], 10)
+            };
+
+
+
+            if(figureEl.children.length > 1) {
+              // <figcaption> content
+              item.title = figureEl.children[1].innerHTML;
+            }
+
+            if(linkEl.children.length > 0) {
+              // <img> thumbnail element, retrieving thumbnail url
+              item.msrc = linkEl.children[0].getAttribute('src');
+            }
+
+            item.el = figureEl; // save link to element for getThumbBoundsFn
+            items.push(item);
+          }
+
+          return items;
+        };
+
+        // find nearest parent element
+        var closest = function closest(el, fn) {
+          return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+        };
+
+        // triggers when user clicks on thumbnail
+        var onThumbnailsClick = function(e) {
+          e = e || window.event;
+          e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+          var eTarget = e.target || e.srcElement;
+
+          // find root element of slide
+          var clickedListItem = closest(eTarget, function(el) {
+            return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+          });
+
+          if(!clickedListItem) {
+            return;
+          }
+
+          // find index of clicked item by looping through all child nodes
+          // alternatively, you may define index via data- attribute
+          var clickedGallery = clickedListItem.parentNode,
+            childNodes = clickedListItem.parentNode.childNodes,
+            numChildNodes = childNodes.length,
+            nodeIndex = 0,
+            index;
+
+          for (var i = 0; i < numChildNodes; i++) {
+            if(childNodes[i].nodeType !== 1) {
+              continue;
+            }
+
+            if(childNodes[i] === clickedListItem) {
+              index = nodeIndex;
+              break;
+            }
+            nodeIndex++;
+          }
+
+
+
+          if(index >= 0) {
+            // open PhotoSwipe if valid index found
+            openPhotoSwipe( index, clickedGallery );
+          }
+          return false;
+        };
+
+        // parse picture index and gallery index from URL (#&pid=1&gid=2)
+        var photoswipeParseHash = function() {
+          var hash = window.location.hash.substring(1),
+            params = {};
+
+          if(hash.length < 5) {
+            return params;
+          }
+
+          var vars = hash.split('&');
+          for (var i = 0; i < vars.length; i++) {
+            if(!vars[i]) {
+              continue;
+            }
+            var pair = vars[i].split('=');
+            if(pair.length < 2) {
+              continue;
+            }
+            params[pair[0]] = pair[1];
+          }
+
+          if(params.gid) {
+            params.gid = parseInt(params.gid, 10);
+          }
+
+          return params;
+        };
+
+        var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+          var pswpElement = document.querySelectorAll('.pswp')[0],
+            gallery,
+            options,
+            items;
+
+          items = parseThumbnailElements(galleryElement);
+
+          // define options (if needed)
+          options = {
+
+            // define gallery index (for URL)
+            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+            getThumbBoundsFn: function(index) {
+              // See Options -> getThumbBoundsFn section of documentation for more info
+              var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                rect = thumbnail.getBoundingClientRect();
+
+              return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+            }
+
+          };
+
+          // PhotoSwipe opened from URL
+          if(fromURL) {
+            if(options.galleryPIDs) {
+              // parse real index when custom PIDs are used
+              // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+              for(var j = 0; j < items.length; j++) {
+                if(items[j].pid == index) {
+                  options.index = j;
+                  break;
+                }
+              }
+            } else {
+              // in URL indexes start from 1
+              options.index = parseInt(index, 10) - 1;
+            }
+          } else {
+            options.index = parseInt(index, 10);
+          }
+
+          // exit if index not found
+          if( isNaN(options.index) ) {
+            return;
+          }
+
+          if(disableAnimation) {
+            options.showAnimationDuration = 0;
+          }
+
+          // Pass data to PhotoSwipe and initialize it
+          gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+          gallery.init();
+        };
+
+        // loop through all gallery elements and bind events
+        var galleryElements = document.querySelectorAll( gallerySelector );
+
+        for(var i = 0, l = galleryElements.length; i < l; i++) {
+          galleryElements[i].setAttribute('data-pswp-uid', i+1);
+          galleryElements[i].onclick = onThumbnailsClick;
+        }
+
+        // Parse URL and open gallery if it contains #&pid=3&gid=1
+        var hashData = photoswipeParseHash();
+        if(hashData.pid && hashData.gid) {
+          openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
+        }
+      };
+      // execute above function
+      initPhotoSwipeFromDOM('.my-gallery');
+    });
+    $('.maitu-arrow-left2').on('click', function(e){
+      e.preventDefault();
+      mySwiper2.swipePrev();
+    });
+    $('.maitu-arrow-right2').on('click', function(e){
+      e.preventDefault();
+      mySwiper2.swipeNext();
+    });
+    $('.maitu-arrow-left').on('click', function(e){
+      e.preventDefault();
+      mySwiper.swipePrev();
+    })
+    $('.maitu-arrow-right').on('click', function(e){
+      e.preventDefault();
+      mySwiper.swipeNext();
+    })
+  </script>
+</body>
+</html>
