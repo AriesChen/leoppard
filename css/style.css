@@ -2329,6 +2329,42 @@ ol, ul {
   background: none;
 }
 
+.maitu-mobile-banner {
+  margin-top: 3.25rem;
+  height: 27vh !important;
+}
+
+.maitu-footer {
+  background: #ffffff;
+}
+
+.maitu-form {
+  background: #ffffff;
+  padding: 1.875rem 0.9375rem;
+}
+
+.maitu-form .formTitle {
+  font-size: 1.5rem;
+  color: #4A4A4A;
+  text-align: center;
+}
+
+.maitu-form .formsubTitle {
+  font-size: 1.125rem;
+  color: #000000;
+  text-align: center;
+  line-height: 2.0625rem;
+  padding-bottom: 1.25rem;
+}
+
+.maitu-form .row {
+  padding: 0.625rem 0;
+}
+
+.maitu-form .row button {
+  width: 100%;
+}
+
 @font-face {
   font-family: DINPro-Medium;
   src: url("../../assets/fonts/DINPro-Medium_13936.ttf");

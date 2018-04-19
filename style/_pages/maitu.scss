@@ -211,3 +211,32 @@
     }
   }
 }
+.maitu-mobile-banner {
+  margin-top: rem(52);
+  height: 27vh !important;
+}
+.maitu-footer {
+  background: #ffffff;
+}
+.maitu-form {
+  background: #ffffff;
+  padding: rem(30) rem(15);
+  .formTitle {
+    font-size: rem(24);
+    color: #4A4A4A;
+    text-align: center;
+  }
+  .formsubTitle {
+    font-size: rem(18);
+    color: #000000;
+    text-align: center;
+    line-height: rem(33);
+    padding-bottom: rem(20);
+  }
+  .row {
+    padding: rem(10) 0;
+    button {
+      width: 100%;
+    }
+  }
+}
